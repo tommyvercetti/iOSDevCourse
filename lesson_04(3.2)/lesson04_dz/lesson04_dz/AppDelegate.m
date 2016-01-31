@@ -54,10 +54,14 @@
     plovets.weight = 70;
     plovets.gender = @"woman";
     
+    /*
+    //creating array of all sportsmen
+    NSArray* massivSportstmenov = [NSArray arrayWithObjects:chelovek,cyclist,begun,plovets, nil];
     
-    
-    
-    
+    for (Human; <#condition#>; <#increment#>) {
+        <#statements#>
+    }
+    */
     
     
     
