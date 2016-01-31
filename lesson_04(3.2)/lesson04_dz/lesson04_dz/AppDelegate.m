@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 #import "Human.h"
+#import "Velo.h"
+#import "Runner.h"
+#import "Swimmer.h"
+
+
 
 @interface AppDelegate ()
 
@@ -19,9 +24,37 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    Human* chelovek = [[Human alloc]init];
     
-      
+    //creating and init objects for parent class Human
+    
+    Human* chelovek = [[Human alloc]init];
+    chelovek.name = @"Peshehod Vasiliy";
+    chelovek.height = 1.8;
+    chelovek.weight = 75;
+    chelovek.gender = @"man";
+    
+    //for child class Velo
+    Velo* cyclist = [[Velo alloc] init];
+    cyclist.name = @"Velosipedist Valera";
+    cyclist.height = 1.7;
+    cyclist.weight = 65;
+    cyclist.gender = @"man";
+    
+    //for child class Runner
+    Runner* begun = [[Runner alloc] init];
+    begun.name = @"Begun Masha";
+    begun.height = 1.6;
+    begun.weight = 55;
+    begun.gender = @"woman";
+    
+    //for child class swimmer
+    Swimmer* plovets = [[Swimmer alloc]init];
+    plovets.name = @"Plovets Zoiya";
+    plovets.height = 1.9;
+    plovets.weight = 70;
+    plovets.gender = @"woman";
+    
+    
     
     
     
