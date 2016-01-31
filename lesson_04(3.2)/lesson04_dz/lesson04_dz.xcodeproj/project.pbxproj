@@ -16,6 +16,9 @@
 		8408D7AC1C5EA2C9004D1C88 /* lesson04_dzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408D7AB1C5EA2C9004D1C88 /* lesson04_dzTests.m */; };
 		8408D7B71C5EA2CA004D1C88 /* lesson04_dzUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408D7B61C5EA2CA004D1C88 /* lesson04_dzUITests.m */; };
 		8408D7C61C5EA325004D1C88 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408D7C51C5EA325004D1C88 /* Human.m */; };
+		8408D7C91C5EA84F004D1C88 /* Velo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408D7C81C5EA84F004D1C88 /* Velo.m */; };
+		8408D7CC1C5EA989004D1C88 /* Runner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408D7CB1C5EA989004D1C88 /* Runner.m */; };
+		8408D7CF1C5EA9E2004D1C88 /* Swimmer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408D7CE1C5EA9E2004D1C88 /* Swimmer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,12 @@
 		8408D7B81C5EA2CA004D1C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8408D7C41C5EA325004D1C88 /* Human.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
 		8408D7C51C5EA325004D1C88 /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		8408D7C71C5EA84F004D1C88 /* Velo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Velo.h; sourceTree = "<group>"; };
+		8408D7C81C5EA84F004D1C88 /* Velo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Velo.m; sourceTree = "<group>"; };
+		8408D7CA1C5EA989004D1C88 /* Runner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runner.h; sourceTree = "<group>"; };
+		8408D7CB1C5EA989004D1C88 /* Runner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runner.m; sourceTree = "<group>"; };
+		8408D7CD1C5EA9E2004D1C88 /* Swimmer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swimmer.h; sourceTree = "<group>"; };
+		8408D7CE1C5EA9E2004D1C88 /* Swimmer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Swimmer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +115,12 @@
 			children = (
 				8408D7C41C5EA325004D1C88 /* Human.h */,
 				8408D7C51C5EA325004D1C88 /* Human.m */,
+				8408D7C71C5EA84F004D1C88 /* Velo.h */,
+				8408D7C81C5EA84F004D1C88 /* Velo.m */,
+				8408D7CA1C5EA989004D1C88 /* Runner.h */,
+				8408D7CB1C5EA989004D1C88 /* Runner.m */,
+				8408D7CD1C5EA9E2004D1C88 /* Swimmer.h */,
+				8408D7CE1C5EA9E2004D1C88 /* Swimmer.m */,
 				8408D7941C5EA2C9004D1C88 /* AppDelegate.h */,
 				8408D7951C5EA2C9004D1C88 /* AppDelegate.m */,
 				8408D7971C5EA2C9004D1C88 /* ViewController.h */,
@@ -278,10 +293,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8408D7C91C5EA84F004D1C88 /* Velo.m in Sources */,
+				8408D7CC1C5EA989004D1C88 /* Runner.m in Sources */,
 				8408D7991C5EA2C9004D1C88 /* ViewController.m in Sources */,
 				8408D7961C5EA2C9004D1C88 /* AppDelegate.m in Sources */,
 				8408D7931C5EA2C9004D1C88 /* main.m in Sources */,
 				8408D7C61C5EA325004D1C88 /* Human.m in Sources */,
+				8408D7CF1C5EA9E2004D1C88 /* Swimmer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
