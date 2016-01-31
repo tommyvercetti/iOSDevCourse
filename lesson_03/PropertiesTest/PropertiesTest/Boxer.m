@@ -18,6 +18,22 @@
 @implementation Boxer
 @synthesize name = _name;
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.nameCount = 0;
+        self.name = @"Default";
+        self.age = 1;
+        self.height = 0.52f;
+        self.weight = 5.f;
+    }
+    return self;
+}
+
+
+
+
 
 - (void) setName:(NSString *)inputName {
     

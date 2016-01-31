@@ -28,8 +28,6 @@
     boxer.weight = 80.f;
     */
     
-    boxer.nameCount = 0;
-    
     
     [boxer setName:@"Vasiliy"];
     [boxer setAge:25];
