@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Object : NSObject
+@interface Object : NSObject <NSCopying>
+
+@property (strong,nonatomic) NSString* name;
 
 @end

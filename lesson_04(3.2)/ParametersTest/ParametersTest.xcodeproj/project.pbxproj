@@ -15,6 +15,7 @@
 		8408D75C1C5E598C004D1C88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8408D75A1C5E598C004D1C88 /* LaunchScreen.storyboard */; };
 		8408D7671C5E598C004D1C88 /* ParametersTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408D7661C5E598C004D1C88 /* ParametersTestTests.m */; };
 		8408D7721C5E598C004D1C88 /* ParametersTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408D7711C5E598C004D1C88 /* ParametersTestUITests.m */; };
+		8408D7841C5E6DAA004D1C88 /* Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408D7831C5E6DAA004D1C88 /* Object.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		8408D76D1C5E598C004D1C88 /* ParametersTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParametersTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8408D7711C5E598C004D1C88 /* ParametersTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParametersTestUITests.m; sourceTree = "<group>"; };
 		8408D7731C5E598C004D1C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8408D7821C5E6DAA004D1C88 /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
+		8408D7831C5E6DAA004D1C88 /* Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Object.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		8408D74B1C5E598B004D1C88 /* ParametersTest */ = {
 			isa = PBXGroup;
 			children = (
+				8408D7821C5E6DAA004D1C88 /* Object.h */,
+				8408D7831C5E6DAA004D1C88 /* Object.m */,
 				8408D74F1C5E598C004D1C88 /* AppDelegate.h */,
 				8408D7501C5E598C004D1C88 /* AppDelegate.m */,
 				8408D7521C5E598C004D1C88 /* ViewController.h */,
@@ -275,6 +280,7 @@
 			files = (
 				8408D7541C5E598C004D1C88 /* ViewController.m in Sources */,
 				8408D7511C5E598C004D1C88 /* AppDelegate.m in Sources */,
+				8408D7841C5E6DAA004D1C88 /* Object.m in Sources */,
 				8408D74E1C5E598C004D1C88 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

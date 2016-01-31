@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "Object.h"
 
 @interface AppDelegate ()
 
@@ -21,12 +21,22 @@
     
 
     
+    [self testObject];
     
     
+    
+    NSLog(@"tets is over");
     
     return YES;
 }
 
+
+
+-(void) testObject {
+    Object* obj = [[Object alloc] init];
+    
+    self.object = obj;
+}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
