@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "Object.h"
+#import "Child.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,61 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //NSArray * array = [[NSArray alloc]initWithObjects:@"String 1", @"String 2", @"String3", nil];
+    
+    //NSArray*  array = [NSArray arrayWithObjects:@"String 1", @"String 2", @"String3", nil];
+    
+    //NSArray * array = @[@"String 1", @"String 2", @"String3"];
+    
+   
+    
+    
+    
+    /*
+    for (int i = 0; i < [array count] ; i++) {
+        NSLog(@"%@", [array objectAtIndex:i]);
+        NSLog(@"i=%d", i);
+    }
+    
+    for (int i = [array count] - 1; i >= 0; i--) {
+        NSLog(@"%@", [array objectAtIndex:i]);
+        NSLog(@"i=%d", i);
+    }
+    */
+    /*
+    for (NSString* string in array) {
+        NSLog(@"%@",string);
+        NSLog(@"index = %d", [array indexOfObject:string]);
+    }
+    */
+    
+    Object* obj1 = [[Object alloc]init];
+    Object* obj2 = [[Object alloc]init];
+    Child* obj3 = [[Child alloc]init];
+    
+    obj1.name = @"Obj one";
+    obj2.name = @"Obj two";
+    [obj3 setName:@"Obj three"];
+    
+    obj3.lastName = @"Last Name";
+    
+    NSArray* array = [NSArray arrayWithObjects:obj1,obj2,obj3, nil];
+    
+    for (Object* obj in array) {
+        NSLog(@"name = %@", obj.name);
+        [obj action];
+        
+        if ([obj isKindOfClass:[Child class]]) {
+            
+            Child* child = (Child*)obj;
+            
+            NSLog(@" last name = %@", child.lastName);
+        }
+        
+    }
+    
+    
     return YES;
 }
 
