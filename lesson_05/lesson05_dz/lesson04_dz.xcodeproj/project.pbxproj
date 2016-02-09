@@ -19,6 +19,7 @@
 		8408D7C91C5EA84F004D1C88 /* Velo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408D7C81C5EA84F004D1C88 /* Velo.m */; };
 		8408D7CC1C5EA989004D1C88 /* Runner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408D7CB1C5EA989004D1C88 /* Runner.m */; };
 		8408D7CF1C5EA9E2004D1C88 /* Swimmer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8408D7CE1C5EA9E2004D1C88 /* Swimmer.m */; };
+		84F41D691C6A722C000ED233 /* WalkingDead.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F41D681C6A722C000ED233 /* WalkingDead.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		8408D7CB1C5EA989004D1C88 /* Runner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runner.m; sourceTree = "<group>"; };
 		8408D7CD1C5EA9E2004D1C88 /* Swimmer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swimmer.h; sourceTree = "<group>"; };
 		8408D7CE1C5EA9E2004D1C88 /* Swimmer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Swimmer.m; sourceTree = "<group>"; };
+		84F41D671C6A722C000ED233 /* WalkingDead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkingDead.h; sourceTree = "<group>"; };
+		84F41D681C6A722C000ED233 /* WalkingDead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkingDead.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 			children = (
 				8408D7C41C5EA325004D1C88 /* Human.h */,
 				8408D7C51C5EA325004D1C88 /* Human.m */,
+				84F41D671C6A722C000ED233 /* WalkingDead.h */,
+				84F41D681C6A722C000ED233 /* WalkingDead.m */,
 				8408D7C71C5EA84F004D1C88 /* Velo.h */,
 				8408D7C81C5EA84F004D1C88 /* Velo.m */,
 				8408D7CA1C5EA989004D1C88 /* Runner.h */,
@@ -296,6 +301,7 @@
 				8408D7C91C5EA84F004D1C88 /* Velo.m in Sources */,
 				8408D7CC1C5EA989004D1C88 /* Runner.m in Sources */,
 				8408D7991C5EA2C9004D1C88 /* ViewController.m in Sources */,
+				84F41D691C6A722C000ED233 /* WalkingDead.m in Sources */,
 				8408D7961C5EA2C9004D1C88 /* AppDelegate.m in Sources */,
 				8408D7931C5EA2C9004D1C88 /* main.m in Sources */,
 				8408D7C61C5EA325004D1C88 /* Human.m in Sources */,
@@ -525,6 +531,7 @@
 				8408D7BD1C5EA2CA004D1C88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8408D7BE1C5EA2CA004D1C88 /* Build configuration list for PBXNativeTarget "lesson04_dzTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +540,7 @@
 				8408D7C01C5EA2CA004D1C88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8408D7C11C5EA2CA004D1C88 /* Build configuration list for PBXNativeTarget "lesson04_dzUITests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +549,7 @@
 				8408D7C31C5EA2CA004D1C88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

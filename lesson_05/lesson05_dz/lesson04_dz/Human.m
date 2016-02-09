@@ -25,7 +25,7 @@
 
 
 - (void) methodMovement{
-    NSLog(@"I'm walkingDead!");
+    NSLog(@"I'm just walking around!");
 }
 
 @end

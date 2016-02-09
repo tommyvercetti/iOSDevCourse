@@ -11,6 +11,7 @@
 #import "Velo.h"
 #import "Runner.h"
 #import "Swimmer.h"
+#import "WalkingDead.h"
 
 
 
@@ -54,12 +55,59 @@
     plovets.weight = 70;
     plovets.gender = @"woman";
     
-    /*
-    //creating array of all sportsmen
-    NSArray* massivSportstmenov = [NSArray arrayWithObjects:chelovek,cyclist,begun,plovets, nil];
+    WalkingDead* zombak = [[WalkingDead alloc]init];
+    zombak.walkingName = @"dohliak";
+    zombak.deadAge = 2.5;
     
-    for (Human; <#condition#>; <#increment#>) {
-        <#statements#>
+    //creating array of all sportsmen
+    NSArray* massivSportstmenov = [NSArray arrayWithObjects:chelovek,cyclist,begun,plovets,zombak, nil];
+    
+    for (int countNumber = [massivSportstmenov count] - 1; countNumber >= 0; countNumber--) {
+        Human* Benito = [massivSportstmenov objectAtIndex:countNumber];
+        if ([Benito isKindOfClass:[WalkingDead class]]) {
+            WalkingDead* anyWalkingDead = (WalkingDead*) Benito;
+            
+            NSLog(@"name human: %@, height human: %.2f, weight human: %.2f, gender human: %@, walking name: %@, dead age: %.2f",
+                  anyWalkingDead.name,
+                  anyWalkingDead.height,
+                  anyWalkingDead.weight,
+                  anyWalkingDead.gender,
+                  anyWalkingDead.walkingName,
+                  anyWalkingDead.deadAge);
+            
+            NSLog(@"%@ say: ", anyWalkingDead.name);
+            [anyWalkingDead slowWalking];
+            [anyWalkingDead methodMovement];
+            NSLog(@" ");
+        }
+        else{
+            NSLog(@"name Human: %@, height human: %.2f, weight human: %.2f, gender human: %@",
+                  Benito.name,
+                  Benito.height,
+                  Benito.weight,
+                  Benito.gender);
+            NSLog(@"%@ say; ", Benito.name);
+            [Benito methodMovement];
+            NSLog(@" ");
+            
+        }
+        
+    }
+    
+    
+    
+    /*
+    //init array
+    for (Human* arrayOfSpotrtsmens in massivSportstmenov) {
+        NSLog(@"name: %@, height: %.2f, weight: %.2f, gender: %@",
+              arrayOfSpotrtsmens.name,
+              arrayOfSpotrtsmens.height,
+              arrayOfSpotrtsmens.weight,
+              arrayOfSpotrtsmens.gender);
+        
+        NSLog(@"%@ says:", arrayOfSpotrtsmens.name);
+        [arrayOfSpotrtsmens methodMovement];
+        NSLog(@" ");
     }
     */
     
