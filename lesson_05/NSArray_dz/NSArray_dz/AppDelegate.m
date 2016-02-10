@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "Human.h"
+#import "Cyclist.h"
+#import "Runer.h"
+#import "Swimer.h"
+#import "Dancer.h"
 
 @interface AppDelegate ()
 
@@ -19,20 +24,68 @@
     // Override point for customization after application launch.
     
     Human* chel = [[Human alloc]init];
+    /*
     chel.name = @"Peshehod";
     chel.height = 1.8;
     chel.weight = 75;
     chel.gender = @"male";
+     */
+    
+    Dancer* tancor = [[Dancer alloc]init];
     
     
-    for (Human* arraySportsmens in ) {
-        <#statements#>
+    Human* chelovek = [[Human alloc]init];
+    chelovek.name = @"Peshehod2";
+    chelovek.height = 1.6;
+    chelovek.weight = 55;
+    chelovek.gender = @"female";
+    
+    
+    Cyclist* bycilist = [[Cyclist alloc]init];
+    bycilist.name = @"Velik 1";
+    bycilist.height = 1.32;
+    bycilist.weight = 54;
+    bycilist.gender = @"male";
+    
+    Runer* begun = [[Runer alloc]init];
+    begun.name = @"begun 1";
+    begun.height = 1.68;
+    begun.weight = 64;
+    begun.gender = @"female";
+    
+    NSLog(@"name is %@", chel.name );
+    NSLog(@"name is %@, dancing age %@, age %@", [tancor name], tancor.dancingAge, tancor.age );
+    
+    /*
+    NSArray* arrayOfPeshehods = [NSArray arrayWithObjects:chel,chelovek, nil];
+    
+    for (Human* stringAbout in arrayOfPeshehods) {
+        NSLog(@"name is: %@, height is: %.2f, weight is: %.2f, gender is: %@",
+              stringAbout.name,
+              stringAbout.height,
+              stringAbout.weight,
+              stringAbout.gender);
+        
+        NSLog(@"%@ doing what? - ", stringAbout.name);
+        [stringAbout movement];
     }
     
     
-    NSLog(@"name is: %@, height is: %@, weight is: %@, gender is: %@", );
+    NSArray* arrayOfSports = [NSArray arrayWithObjects:chel, chelovek, bycilist, begun, nil];
     
+    for (Human* stringAbout in arrayOfSports){
+        NSLog(@"name: %@, heigth: %.2f, weight: %.2f, gender: %@",
+              stringAbout.name,
+              stringAbout.height,
+              stringAbout.weight,
+              stringAbout.gender);
+        
+        NSLog(@"%@ doing", stringAbout.name);
+        [stringAbout movement];
+        
+    }
     
+    */
     
     
     return YES;

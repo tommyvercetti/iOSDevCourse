@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84F41D6C1C6BD62B000ED233 /* Dancer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F41D6B1C6BD62B000ED233 /* Dancer.m */; };
 		E6EC082B1C6B855000C1F130 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EC082A1C6B855000C1F130 /* main.m */; };
 		E6EC082E1C6B855000C1F130 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EC082D1C6B855000C1F130 /* AppDelegate.m */; };
 		E6EC08311C6B855000C1F130 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EC08301C6B855000C1F130 /* ViewController.m */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84F41D6A1C6BD62B000ED233 /* Dancer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dancer.h; sourceTree = "<group>"; };
+		84F41D6B1C6BD62B000ED233 /* Dancer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dancer.m; sourceTree = "<group>"; };
 		E6EC08261C6B855000C1F130 /* NSArray_dz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSArray_dz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6EC082A1C6B855000C1F130 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E6EC082C1C6B855000C1F130 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 			children = (
 				E6EC08401C6B857E00C1F130 /* Human.h */,
 				E6EC08411C6B857E00C1F130 /* Human.m */,
+				84F41D6A1C6BD62B000ED233 /* Dancer.h */,
+				84F41D6B1C6BD62B000ED233 /* Dancer.m */,
 				E6EC08431C6B9B8C00C1F130 /* Cyclist.h */,
 				E6EC08441C6B9B8C00C1F130 /* Cyclist.m */,
 				E6EC08461C6B9B9C00C1F130 /* Runer.h */,
@@ -170,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F41D6C1C6BD62B000ED233 /* Dancer.m in Sources */,
 				E6EC08481C6B9B9C00C1F130 /* Runer.m in Sources */,
 				E6EC084B1C6B9BA800C1F130 /* Swimer.m in Sources */,
 				E6EC08451C6B9B8C00C1F130 /* Cyclist.m in Sources */,
@@ -325,6 +331,7 @@
 				E6EC083F1C6B855000C1F130 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
