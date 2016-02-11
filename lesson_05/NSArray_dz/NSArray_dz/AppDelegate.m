@@ -24,14 +24,17 @@
     // Override point for customization after application launch.
     
     Human* chel = [[Human alloc]init];
-    /*
     chel.name = @"Peshehod";
     chel.height = 1.8;
     chel.weight = 75;
     chel.gender = @"male";
-     */
+    
     
     Dancer* tancor = [[Dancer alloc]init];
+    tancor.name = @"tancorchik";
+    tancor.height = 1.8;
+    tancor.weight = 75;
+    tancor.gender = @"male";
     
     
     Human* chelovek = [[Human alloc]init];
@@ -54,38 +57,37 @@
     begun.gender = @"female";
     
     NSLog(@"name is %@", chel.name );
-    NSLog(@"name is %@, dancing age %@, age %@", [tancor name], tancor.dancingAge, tancor.age );
+    NSLog(@"name is %@, dancing age %@, age %@", tancor.name, tancor.dancingAge, tancor.age );
     
-    /*
-    NSArray* arrayOfPeshehods = [NSArray arrayWithObjects:chel,chelovek, nil];
     
-    for (Human* stringAbout in arrayOfPeshehods) {
-        NSLog(@"name is: %@, height is: %.2f, weight is: %.2f, gender is: %@",
+    NSArray* secondArray = [NSArray arrayWithObjects:chel,tancor, chelovek, bycilist, begun, nil];
+    
+    //NSArray* arrayOfSports = [NSArray arrayWithObjects:chel, chelovek, bycilist, begun, nil];
+    
+    for (Human* stringAbout in secondArray){
+        NSLog(@"name: %@, heigth: %.2f, weight: %.2f, gender: %@,",
               stringAbout.name,
               stringAbout.height,
               stringAbout.weight,
               stringAbout.gender);
-        
-        NSLog(@"%@ doing what? - ", stringAbout.name);
-        [stringAbout movement];
-    }
-    
-    
-    NSArray* arrayOfSports = [NSArray arrayWithObjects:chel, chelovek, bycilist, begun, nil];
-    
-    for (Human* stringAbout in arrayOfSports){
-        NSLog(@"name: %@, heigth: %.2f, weight: %.2f, gender: %@",
-              stringAbout.name,
-              stringAbout.height,
-              stringAbout.weight,
-              stringAbout.gender);
-        
+              
         NSLog(@"%@ doing", stringAbout.name);
         [stringAbout movement];
         
     }
     
-    */
+    
+    
+    
+
+    
+    
+   
+    
+    
+   
+    
+    
     
     
     return YES;
