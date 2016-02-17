@@ -10,4 +10,8 @@
 
 @implementation Protoss
 
+- (void) sayingQuote{
+    NSLog(@"I'm a Protoss!");
+}
+
 @end

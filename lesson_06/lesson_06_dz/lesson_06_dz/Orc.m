@@ -10,4 +10,8 @@
 
 @implementation Orc
 
+- (void) sayingQuote{
+    NSLog(@"I'm an Orc!");
+}
+
 @end

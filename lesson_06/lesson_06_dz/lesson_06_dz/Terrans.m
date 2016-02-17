@@ -10,4 +10,8 @@
 
 @implementation Terrans
 
+- (void) sayingQuote{
+    NSLog(@"I'm a Terran!");
+}
+
 @end

@@ -10,4 +10,9 @@
 
 @implementation Human
 
+- (void) sayingQuote{
+    NSLog(@"I'm a HUMAN!");
+}
+
+
 @end

@@ -7,7 +7,17 @@
 //
 
 #import "AppDelegate.h"
-#import "StarCraft.h"
+#import "ProtoClass.h"
+#import "Human.h"
+#import "Elf.h"
+#import "Orc.h"
+#import "Terrans.h"
+#import "Protoss.h"
+#import "Zerg.h"
+
+
+
+
 
 @interface AppDelegate ()
 
@@ -18,6 +28,34 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    ProtoClass* protoLife = [[ProtoClass alloc]init];
+    NSLog(@"name = %@", protoLife.name);
+
+    
+    Human* peasant = [[Human alloc]init];
+    peasant.name = @"Harvie Dent";
+    peasant.height = 175.0;
+    peasant.weight = 75.0;
+    peasant.race = 1;
+    peasant.gender = genderFemale;
+    peasant.type = 0;
+    
+    //упаковать энум в оболочку
+    NSLog(@"name = %@, height = %.2f, weight = %.2f, race = %d, gender = %d, type = %d",
+          peasant.name,
+          peasant.height,
+          peasant.weight,
+          peasant.race,
+          peasant.gender,
+          peasant.type,
+          nil);
+
+    NSLog(@"%@ saying", peasant.name);
+    [peasant sayingQuote];
+    
+    
     
     
     

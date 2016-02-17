@@ -10,4 +10,8 @@
 
 @implementation Elf
 
+- (void) sayingQuote{
+    NSLog(@"I'm an Elf!");
+}
+
 @end

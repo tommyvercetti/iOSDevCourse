@@ -10,4 +10,8 @@
 
 @implementation Zerg
 
+- (void) sayingQuote{
+    NSLog(@"I'm a Zerg!");
+}
+
 @end

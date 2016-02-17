@@ -10,31 +10,31 @@
 #import <UIKit/UIKit.h>
 //enumes
 typedef enum {
-    noneRace,
-    Human,
-    Elf,
-    Orc,
-    Terrans,
-    Protoss,
-    Zerg,
+    raceNone,
+    raceHuman,
+    raceElf,
+    raceOrc,
+    raceTerrans,
+    raceProtoss,
+    raceZerg,
     
     
 } enumRace;
 
 typedef enum{
-    noneGender,
-    Male,
-    Female,
-    Xenomorph,
+    genderNone,
+    genderMale,
+    genderFemale,
+    genderXenomorph,
     
     
 } enumGender;
 
 typedef enum{
-    noneType,
-    Ground,
-    Air,
-    Worker
+    typeOfCreepNone,
+    typeOfCreepGround,
+    typeOfCreepAir,
+    typeOfCreepWorker
     
 } enumType;
 
