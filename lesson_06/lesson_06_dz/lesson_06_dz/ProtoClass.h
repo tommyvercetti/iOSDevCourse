@@ -7,25 +7,31 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
+//enumes
 typedef enum {
-    Orc,
-    Elf,
+    noneRace,
     Human,
+    Elf,
+    Orc,
     Terrans,
     Protoss,
-    Zerg
+    Zerg,
+    
     
 } enumRace;
 
 typedef enum{
+    noneGender,
     Male,
     Female,
-    Xenomorph
+    Xenomorph,
+    
     
 } enumGender;
 
 typedef enum{
+    noneType,
     Ground,
     Air,
     Worker
@@ -34,12 +40,15 @@ typedef enum{
 
 @interface ProtoClass : NSObject
 
-
+//properties
 @property (strong, nonatomic) NSString* name;
+@property (assign, nonatomic) CGFloat height;
+@property (assign, nonatomic) CGFloat weight;
 @property (assign, nonatomic) enumRace race;
 @property (assign, nonatomic) enumGender gender;
 @property (assign, nonatomic) enumType type;
 
-
+//methods
+- (void) sayingQuote;
 
 @end

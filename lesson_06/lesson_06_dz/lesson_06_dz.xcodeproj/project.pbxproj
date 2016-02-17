@@ -14,6 +14,12 @@
 		E6AE11141C74BF3700AB06F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6AE11131C74BF3700AB06F2 /* Assets.xcassets */; };
 		E6AE11171C74BF3700AB06F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6AE11151C74BF3700AB06F2 /* LaunchScreen.storyboard */; };
 		E6AE11231C74D4EC00AB06F2 /* ProtoClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AE11221C74D4EC00AB06F2 /* ProtoClass.m */; };
+		E6AE11261C74D6BF00AB06F2 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AE11251C74D6BF00AB06F2 /* Human.m */; };
+		E6AE11291C74D6D100AB06F2 /* Elf.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AE11281C74D6D100AB06F2 /* Elf.m */; };
+		E6AE112C1C74D6DB00AB06F2 /* Orc.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AE112B1C74D6DB00AB06F2 /* Orc.m */; };
+		E6AE112F1C74D6EF00AB06F2 /* Terrans.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AE112E1C74D6EF00AB06F2 /* Terrans.m */; };
+		E6AE11321C74D70000AB06F2 /* Protoss.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AE11311C74D70000AB06F2 /* Protoss.m */; };
+		E6AE11351C74D70C00AB06F2 /* Zerg.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AE11341C74D70C00AB06F2 /* Zerg.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +35,18 @@
 		E6AE11181C74BF3700AB06F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6AE11211C74D4EC00AB06F2 /* ProtoClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtoClass.h; sourceTree = "<group>"; };
 		E6AE11221C74D4EC00AB06F2 /* ProtoClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtoClass.m; sourceTree = "<group>"; };
+		E6AE11241C74D6BF00AB06F2 /* Human.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		E6AE11251C74D6BF00AB06F2 /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		E6AE11271C74D6D100AB06F2 /* Elf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Elf.h; sourceTree = "<group>"; };
+		E6AE11281C74D6D100AB06F2 /* Elf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Elf.m; sourceTree = "<group>"; };
+		E6AE112A1C74D6DB00AB06F2 /* Orc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Orc.h; sourceTree = "<group>"; };
+		E6AE112B1C74D6DB00AB06F2 /* Orc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Orc.m; sourceTree = "<group>"; };
+		E6AE112D1C74D6EF00AB06F2 /* Terrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Terrans.h; sourceTree = "<group>"; };
+		E6AE112E1C74D6EF00AB06F2 /* Terrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Terrans.m; sourceTree = "<group>"; };
+		E6AE11301C74D70000AB06F2 /* Protoss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Protoss.h; sourceTree = "<group>"; };
+		E6AE11311C74D70000AB06F2 /* Protoss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Protoss.m; sourceTree = "<group>"; };
+		E6AE11331C74D70C00AB06F2 /* Zerg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zerg.h; sourceTree = "<group>"; };
+		E6AE11341C74D70C00AB06F2 /* Zerg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zerg.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +81,18 @@
 			children = (
 				E6AE11211C74D4EC00AB06F2 /* ProtoClass.h */,
 				E6AE11221C74D4EC00AB06F2 /* ProtoClass.m */,
+				E6AE11241C74D6BF00AB06F2 /* Human.h */,
+				E6AE11251C74D6BF00AB06F2 /* Human.m */,
+				E6AE11271C74D6D100AB06F2 /* Elf.h */,
+				E6AE11281C74D6D100AB06F2 /* Elf.m */,
+				E6AE112A1C74D6DB00AB06F2 /* Orc.h */,
+				E6AE112B1C74D6DB00AB06F2 /* Orc.m */,
+				E6AE112D1C74D6EF00AB06F2 /* Terrans.h */,
+				E6AE112E1C74D6EF00AB06F2 /* Terrans.m */,
+				E6AE11301C74D70000AB06F2 /* Protoss.h */,
+				E6AE11311C74D70000AB06F2 /* Protoss.m */,
+				E6AE11331C74D70C00AB06F2 /* Zerg.h */,
+				E6AE11341C74D70C00AB06F2 /* Zerg.m */,
 				E6AE110A1C74BF3700AB06F2 /* AppDelegate.h */,
 				E6AE110B1C74BF3700AB06F2 /* AppDelegate.m */,
 				E6AE110D1C74BF3700AB06F2 /* ViewController.h */,
@@ -157,7 +187,13 @@
 			files = (
 				E6AE11231C74D4EC00AB06F2 /* ProtoClass.m in Sources */,
 				E6AE110F1C74BF3700AB06F2 /* ViewController.m in Sources */,
+				E6AE11261C74D6BF00AB06F2 /* Human.m in Sources */,
+				E6AE11321C74D70000AB06F2 /* Protoss.m in Sources */,
+				E6AE112F1C74D6EF00AB06F2 /* Terrans.m in Sources */,
+				E6AE11351C74D70C00AB06F2 /* Zerg.m in Sources */,
+				E6AE11291C74D6D100AB06F2 /* Elf.m in Sources */,
 				E6AE110C1C74BF3700AB06F2 /* AppDelegate.m in Sources */,
+				E6AE112C1C74D6DB00AB06F2 /* Orc.m in Sources */,
 				E6AE11091C74BF3700AB06F2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
