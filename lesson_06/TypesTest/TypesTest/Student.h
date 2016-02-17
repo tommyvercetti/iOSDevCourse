@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum {
+    genderMale,
+    genderFemale
+    
+} Gender;
+
+
 @interface Student : NSObject
+
+@property ( strong, nonatomic) NSString* name;
+@property ( assign, nonatomic) Gender gender;
 
 @end
