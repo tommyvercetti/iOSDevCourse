@@ -8,6 +8,38 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum {
+    Orc,
+    Elf,
+    Human,
+    Terrans,
+    Protoss,
+    Zerg
+    
+} enumRace;
+
+typedef enum{
+    Male,
+    Female,
+    Xenomorph
+    
+} enumGender;
+
+typedef enum{
+    Ground,
+    Air,
+    Worker
+    
+} enumType;
+
 @interface ProtoClass : NSObject
+
+
+@property (strong, nonatomic) NSString* name;
+@property (assign, nonatomic) enumRace race;
+@property (assign, nonatomic) enumGender gender;
+@property (assign, nonatomic) enumType type;
+
+
 
 @end
