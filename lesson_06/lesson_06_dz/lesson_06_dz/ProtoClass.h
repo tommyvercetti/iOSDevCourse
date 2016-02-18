@@ -51,4 +51,6 @@ typedef enum{
 //methods
 - (void) sayingQuote;
 
+- (void) sayingRace;
+
 @end

@@ -32,4 +32,10 @@
     NSLog(@"quote");
 }
 
+- (void) sayingRace{
+    if (raceHuman) {
+        NSLog(@"");
+    }
+}
+
 @end

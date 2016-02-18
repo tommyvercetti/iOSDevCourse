@@ -31,7 +31,14 @@
     
     
     ProtoClass* protoLife = [[ProtoClass alloc]init];
-    NSLog(@"name = %@", protoLife.name);
+    NSLog(@"name = %@, height = %.2f, weight = %.2f, race = %d, gender = %d, type = %d",
+          protoLife.name,
+          protoLife.height,
+          protoLife.weight,
+          protoLife.race,
+          protoLife.gender,
+          protoLife.type,
+          nil);
 
     
     Human* peasant = [[Human alloc]init];
@@ -42,7 +49,19 @@
     peasant.gender = genderFemale;
     peasant.type = 0;
     
-    //упаковать энум в оболочку
+    Elf* archer = [[Elf alloc]init];
+    archer.name = @"Kuel T'alas";
+    archer.height = 175.0;
+    archer.weight = 75.0;
+    archer.race = 1;
+    archer.gender = genderMale;
+    archer.type = 0;
+    
+    
+    
+    
+    
+    
     NSLog(@"name = %@, height = %.2f, weight = %.2f, race = %d, gender = %d, type = %d",
           peasant.name,
           peasant.height,
@@ -54,6 +73,12 @@
 
     NSLog(@"%@ saying", peasant.name);
     [peasant sayingQuote];
+    
+    
+    
+    
+    
+    
     
     
     
