@@ -14,6 +14,7 @@
 #import "Terrans.h"
 #import "Protoss.h"
 #import "Zerg.h"
+#import "Statistics.h"
 
 
 
@@ -29,26 +30,40 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    NSLog(@"************01************");
+    NSLog(@"--------------------------");
     
     ProtoClass* protoLife = [[ProtoClass alloc]init];
-    NSLog(@"name = %@, height = %.2f, weight = %.2f, race = %d, gender = %d, type = %d",
+    NSLog(@"name = %@, height = %.2f, weight = %.2f, race = %@, gender = %@, type = %@",
           protoLife.name,
           protoLife.height,
           protoLife.weight,
-          protoLife.race,
-          protoLife.gender,
-          protoLife.type,
+          [ProtoClass NSStringWithEnumRace:raceNone],
+          [ProtoClass NSStringWithEnumGender:genderNone],
+          [ProtoClass NSStringWithEnumType:typeOfCreepNone],
           nil);
-
     
-    Human* peasant = [[Human alloc]init];
-    peasant.name = @"Harvie Dent";
-    peasant.height = 175.0;
-    peasant.weight = 75.0;
-    peasant.race = 1;
-    peasant.gender = genderFemale;
-    peasant.type = 0;
+    NSLog(@"--------------------------");
+    Human* marine = [[Human alloc]init];
+    marine.name = @"Harvie Dent";
+    marine.height = 175.0;
+    marine.weight = 75.0;
+    marine.race = 1;
+    marine.gender = genderFemale;
+    marine.type = 0;
     
+    NSLog(@"name = %@, height = %.2f, weight = %.2f, race = %@, gender = %@, type = %@",
+          marine.name,
+          marine.height,
+          marine.weight,
+          [ProtoClass NSStringWithEnumRace:raceHuman],
+          [ProtoClass NSStringWithEnumGender:genderMale],
+          [ProtoClass NSStringWithEnumType:typeOfCreepGround],
+          nil);
+    NSLog(@"%@ saying", marine.name);
+    [marine sayingQuote];
+    
+    NSLog(@"--------------------------");
     Elf* archer = [[Elf alloc]init];
     archer.name = @"Kuel T'alas";
     archer.height = 175.0;
@@ -57,27 +72,62 @@
     archer.gender = genderMale;
     archer.type = 0;
     
-    
-    
-    
-    
-    
-    NSLog(@"name = %@, height = %.2f, weight = %.2f, race = %d, gender = %d, type = %d",
-          peasant.name,
-          peasant.height,
-          peasant.weight,
-          peasant.race,
-          peasant.gender,
-          peasant.type,
+    NSLog(@"name = %@, height = %.2f, weight = %.2f, race = %@, gender = %@, type = %@",
+          archer.name,
+          archer.height,
+          archer.weight,
+          [Elf NSStringWithEnumRace:raceElf],
+          [Elf NSStringWithEnumGender:genderMale],
+          [Elf NSStringWithEnumType:typeOfCreepGround],
           nil);
-
-    NSLog(@"%@ saying", peasant.name);
-    [peasant sayingQuote];
+    NSLog(@"--------------------------");
+    
+    NSLog(@"************02************");
+    
+    /*
+    NSMutableArray* arrayOfCoordinates = [[NSMutableArray alloc]init];
+    NSMutableArray* arrayOfShootResults = [[NSMutableArray alloc]init];
+    
+    NSNumber* onGoalObject = [NSNumber numberWithInt:DataOnGoal];
+    NSNumber* miss = [NSNumber numberWithInt:DataMiss];
+    NSNumber* onTargetObject = [NSNumber numberWithInt:DataShootsOnTarget];
+    
+    NSNumber* onGoalCount = 0;
+    NSNumber* onTargetCount = 0;
+    NSNumber* missCount = 0;
+    
+    NSMutableArray* arrayOnGoal = [[NSMutableArray alloc]init];
+    NSMutableArray* arrayOnTarget = [[NSMutableArray alloc]init];
+    NSMutableArray* arrayMiss = [[NSMutableArray alloc]init];
+    */
     
     
     
+    CGPoint point1 = [Statistics addPointRandom];
+    CGPoint point2 = [Statistics addPointRandom];
+    CGPoint point3 = [Statistics addPointRandom];
+    CGPoint point4 = [Statistics addPointRandom];
+    CGPoint point5 = [Statistics addPointRandom];
     
     
+    
+    NSArray *arrayPoint = [NSArray arrayWithObjects:
+                           [NSValue valueWithCGPoint:point1],
+                           [NSValue valueWithCGPoint:point2],
+                           [NSValue valueWithCGPoint:point3],
+                           [NSValue valueWithCGPoint:point4],
+                           [NSValue valueWithCGPoint:point5],
+                           nil];
+    
+    
+    NSInteger countNumber = 1;
+    
+    for (NSValue* valueTemp in  arrayPoint) {
+        CGPoint pointTemp = [valueTemp CGPointValue];
+        
+        
+    }
+  
     
     
     

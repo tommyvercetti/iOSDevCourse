@@ -20,6 +20,7 @@
 		E6AE112F1C74D6EF00AB06F2 /* Terrans.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AE112E1C74D6EF00AB06F2 /* Terrans.m */; };
 		E6AE11321C74D70000AB06F2 /* Protoss.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AE11311C74D70000AB06F2 /* Protoss.m */; };
 		E6AE11351C74D70C00AB06F2 /* Zerg.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AE11341C74D70C00AB06F2 /* Zerg.m */; };
+		E6B505481C773F4000436E76 /* Statistics.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B505471C773F4000436E76 /* Statistics.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		E6AE11311C74D70000AB06F2 /* Protoss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Protoss.m; sourceTree = "<group>"; };
 		E6AE11331C74D70C00AB06F2 /* Zerg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zerg.h; sourceTree = "<group>"; };
 		E6AE11341C74D70C00AB06F2 /* Zerg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zerg.m; sourceTree = "<group>"; };
+		E6B505461C773F4000436E76 /* Statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Statistics.h; sourceTree = "<group>"; };
+		E6B505471C773F4000436E76 /* Statistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Statistics.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				E6AE11311C74D70000AB06F2 /* Protoss.m */,
 				E6AE11331C74D70C00AB06F2 /* Zerg.h */,
 				E6AE11341C74D70C00AB06F2 /* Zerg.m */,
+				E6B505461C773F4000436E76 /* Statistics.h */,
+				E6B505471C773F4000436E76 /* Statistics.m */,
 				E6AE110A1C74BF3700AB06F2 /* AppDelegate.h */,
 				E6AE110B1C74BF3700AB06F2 /* AppDelegate.m */,
 				E6AE110D1C74BF3700AB06F2 /* ViewController.h */,
@@ -185,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B505481C773F4000436E76 /* Statistics.m in Sources */,
 				E6AE11231C74D4EC00AB06F2 /* ProtoClass.m in Sources */,
 				E6AE110F1C74BF3700AB06F2 /* ViewController.m in Sources */,
 				E6AE11261C74D6BF00AB06F2 /* Human.m in Sources */,
@@ -343,6 +349,7 @@
 				E6AE111D1C74BF3700AB06F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

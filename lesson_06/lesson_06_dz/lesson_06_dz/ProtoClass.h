@@ -26,8 +26,7 @@ typedef enum{
     genderMale,
     genderFemale,
     genderXenomorph,
-    
-    
+        
 } enumGender;
 
 typedef enum{
@@ -50,7 +49,15 @@ typedef enum{
 
 //methods
 - (void) sayingQuote;
-
 - (void) sayingRace;
+
++ (NSString*) NSStringWithEnumRace : (enumRace) tempRace;
++ (NSString*) NSStringWithEnumGender : (enumGender) tempGender;
++ (NSString*) NSStringWithEnumType : (enumType) tempType;
+
+
+
+
+
 
 @end

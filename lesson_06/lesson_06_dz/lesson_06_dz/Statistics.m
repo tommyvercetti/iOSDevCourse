@@ -10,4 +10,14 @@
 
 @implementation Statistics
 
+
++(CGPoint) addPointRandom{
+    CGPoint pointTemp = CGPointMake(arc4random()%11, arc4random()%11);
+    return pointTemp;
+};
+
+
++(void) trr{
+    NSLog(@"trrr");
+}
 @end

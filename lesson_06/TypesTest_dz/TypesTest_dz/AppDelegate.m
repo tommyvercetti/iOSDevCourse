@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "EnumTest.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    NSLog(@"gender is - %@",[EnumTest NSStringWithEnumGender:genderMale] );
+    NSLog(@"hair colour is - %@",[EnumTest NSStringWithEnumHair:hairRed] );
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     return YES;
 }
 

@@ -38,4 +38,54 @@
     }
 }
 
++ (NSString*) NSStringWithEnumRace : (enumRace) tempRace{
+    NSString* result = nil;
+    if (tempRace == raceNone) {
+        result = @"noneRace, protolife";
+    }else if (tempRace == raceHuman){
+        result = @"Human race";
+    }else if (tempRace == raceElf){
+        result = @"Elf race";
+    }else if (tempRace == raceOrc){
+        result = @"Orc race";
+    }else if (tempRace == raceTerrans){
+        result = @"Terrans race";
+    }else if (tempRace == raceProtoss){
+        result = @"Protoss race";
+    }else if (tempRace == raceZerg){
+        result = @"Zerg race";
+    }
+    return result;
+}
+
++ (NSString*) NSStringWithEnumGender : (enumGender) tempGender{
+    NSString* result = nil;
+    if (tempGender == genderNone) {
+        result = @"noneGender, protolife";
+    }else if (tempGender == genderMale){
+        result = @"Male";
+    }else if (tempGender == genderFemale){
+        result = @"female";
+    }else if (tempGender == genderXenomorph){
+        result = @"Xenomorph";
+    }
+    return result;
+}
+
++ (NSString*) NSStringWithEnumType : (enumType) tempType{
+    NSString* result = nil;
+    if (tempType == typeOfCreepNone) {
+        result = @"noneType, protolife";
+    }else if (tempType == typeOfCreepGround){
+        result = @"Ground type";
+    }else if (tempType == typeOfCreepAir){
+        result = @"Air";
+    }else if (tempType == typeOfCreepWorker){
+        result = @"Worker";
+    }
+    return result;
+}
+
+
+
 @end
