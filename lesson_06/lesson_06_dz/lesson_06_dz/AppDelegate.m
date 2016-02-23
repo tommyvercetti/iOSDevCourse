@@ -125,7 +125,13 @@
     for (NSValue* valueTemp in  arrayPoint) {
         CGPoint pointTemp = [valueTemp CGPointValue];
         
-        
+        if ((pointTemp.x > 3 & pointTemp.x < 7) & (pointTemp.y > 3 & pointTemp.y <7)) {
+            NSLog(@"point%d = %@ wounded enemy android!", countNumber, NSStringFromCGPoint(pointTemp));
+        }
+        else{
+            NSLog(@"point%d = %@ miss", countNumber, NSStringFromCGPoint(pointTemp));
+        }
+        countNumber++;
     }
   
     

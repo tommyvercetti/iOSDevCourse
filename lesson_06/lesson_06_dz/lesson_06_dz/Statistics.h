@@ -25,7 +25,8 @@ typedef enum {
 
 
 
+
 +(CGPoint) addPointRandom;
-+(void) trr;
+
 
 @end

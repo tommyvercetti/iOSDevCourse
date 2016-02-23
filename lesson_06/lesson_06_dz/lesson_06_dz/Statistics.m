@@ -17,7 +17,5 @@
 };
 
 
-+(void) trr{
-    NSLog(@"trrr");
-}
+
 @end
