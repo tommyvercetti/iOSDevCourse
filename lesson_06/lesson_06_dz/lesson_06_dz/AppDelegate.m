@@ -30,6 +30,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    
+    
+    /*
     NSLog(@"************01************");
     NSLog(@"--------------------------");
     
@@ -81,28 +84,80 @@
           [Elf NSStringWithEnumType:typeOfCreepGround],
           nil);
     NSLog(@"--------------------------");
-    
+    */
     NSLog(@"************02************");
     
-    /*
+    
     NSMutableArray* arrayOfCoordinates = [[NSMutableArray alloc]init];
     NSMutableArray* arrayOfShootResults = [[NSMutableArray alloc]init];
     
-    NSNumber* onGoalObject = [NSNumber numberWithInt:DataOnGoal];
-    NSNumber* miss = [NSNumber numberWithInt:DataMiss];
-    NSNumber* onTargetObject = [NSNumber numberWithInt:DataShootsOnTarget];
+    NSNumber* onGoalObject = [NSNumber numberWithInt:dataGoal];
+    NSNumber* miss = [NSNumber numberWithInt:dataMiss];
+    NSNumber* onTargetObject = [NSNumber numberWithInt:dataTarget];
     
-    NSNumber* onGoalCount = 0;
-    NSNumber* onTargetCount = 0;
-    NSNumber* missCount = 0;
+    NSInteger* onGoalCount = 0;
+    NSInteger* onTargetCount = 0;
+    NSInteger* missCount = 0;
     
     NSMutableArray* arrayOnGoal = [[NSMutableArray alloc]init];
     NSMutableArray* arrayOnTarget = [[NSMutableArray alloc]init];
     NSMutableArray* arrayMiss = [[NSMutableArray alloc]init];
-    */
+    
+    for (int i =0;  i<10; i++) {
+        NSInteger x = arc4random()%20;
+        NSInteger y = arc4random()%20;
+        
+        CGRect mainRect = CGRectMake(0, 0, 11, 11);
+        CGRect goalRect = CGRectMake(3, 3, 3, 3);
+        
+        CGPoint shoot = CGPointMake(x, y);
+        
+        if (CGRectContainsPoint(goalRect, shoot)) {
+            [arrayOfCoordinates addObject:[NSValue valueWithCGPoint:shoot]];
+            [arrayOfShootResults addObject:onGoalObject];
+        }else if (CGRectContainsPoint(mainRect, shoot)){
+            [arrayOfCoordinates addObject:[NSValue valueWithCGPoint:shoot]];
+            [arrayOfShootResults addObject:onTargetObject];
+        }else {
+            [arrayOfCoordinates addObject:[NSValue valueWithCGPoint:shoot]];
+            [arrayOfShootResults addObject:miss];
+        }
+        
+    }
+    
+    //output
+    
+    for (int j = 0; j<arrayOfShootResults.count; j++) {
+        if ([[arrayOfShootResults objectAtIndex:j] integerValue] == dataGoal){
+            onGoalCount ++;
+            [arrayOnGoal addObject:[arrayOfCoordinates objectAtIndex:j]];
+        }else if([[arrayOfShootResults objectAtIndex:j] integerValue] == dataTarget){
+            onTargetCount ++;
+            [arrayOnTarget addObject:[arrayOfCoordinates objectAtIndex:j]];
+        }else {
+            missCount ++;
+            [arrayMiss addObject:[arrayOfCoordinates objectAtIndex:j]];
+        }
+    }
+    NSLog(@"Hello");
+    
+    NSLog(@"you shoot on goal %d times", onGoalCount);
+    for (int j = 0; j< onGoalCount; j++) {
+        NSLog(@"%@",NSStringFromCGPoint([[arrayOnGoal objectAtIndex:j] CGPointValue]));
+    }
+    
+    NSLog(@"you shoot on target %d times", onTargetCount);
+    for (int j = 0; j< onTargetCount; j++) {
+        NSLog(@"%@",NSStringFromCGPoint([[arrayOnTarget objectAtIndex:j] CGPointValue]));
+    }
+    
+    NSLog(@"you miss %d times", missCount);
+    for (int j = 0; j< missCount; j++) {
+        NSLog(@"%@",NSStringFromCGPoint([[arrayMiss objectAtIndex:j] CGPointValue]));
+    }
     
     
-    
+    /*
     CGPoint point1 = [Statistics addPointRandom];
     CGPoint point2 = [Statistics addPointRandom];
     CGPoint point3 = [Statistics addPointRandom];
@@ -133,7 +188,7 @@
         }
         countNumber++;
     }
-  
+  */
     
     
     

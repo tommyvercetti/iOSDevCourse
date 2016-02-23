@@ -10,23 +10,28 @@
 #import <CoreGraphics/CoreGraphics.h>
 
 typedef enum {
-    DataMiss,
-    DataOnGoal,
-    DataShootsOnTarget
-}Data;
+    dataMiss,
+    dataGoal,
+    dataTarget
+} enumData;
 
 
 @interface Statistics : NSObject
 
-@property(assign, nonatomic) Data misses;
-@property (assign, nonatomic) Data shootsOnGoal;
-@property (assign, nonatomic) Data shootsOnTarget;
+@property(assign, nonatomic) enumData misses;
+@property (assign, nonatomic) enumData shootsOnGoal;
+@property (assign, nonatomic) enumData shootsOnTarget;
+
+/*
 @property (assign, nonatomic) CGPoint add;
 
 
 
 
 +(CGPoint) addPointRandom;
+
+*/
+
 
 
 @end
