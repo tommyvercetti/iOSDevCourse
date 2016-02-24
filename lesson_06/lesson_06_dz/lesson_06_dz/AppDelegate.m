@@ -86,7 +86,9 @@
     NSLog(@"--------------------------");
     */
     NSLog(@"************02************");
-    
+    //****************************************************************
+
+    /*
     
     NSMutableArray* arrayOfCoordinates = [[NSMutableArray alloc]init];
     NSMutableArray* arrayOfShootResults = [[NSMutableArray alloc]init];
@@ -155,14 +157,19 @@
     for (int j = 0; j< missCount; j++) {
         NSLog(@"%@",NSStringFromCGPoint([[arrayMiss objectAtIndex:j] CGPointValue]));
     }
+    */
     
-    
+    //****************************************************************
     /*
+    
     CGPoint point1 = [Statistics addPointRandom];
     CGPoint point2 = [Statistics addPointRandom];
     CGPoint point3 = [Statistics addPointRandom];
     CGPoint point4 = [Statistics addPointRandom];
     CGPoint point5 = [Statistics addPointRandom];
+    
+    
+    
     
     
     
@@ -188,12 +195,35 @@
         }
         countNumber++;
     }
-  */
+  
+    */
+    //****************************************************************
+
+    CGSize field = CGSizeMake(9.f, 9.f);
+    CGRect mishen = CGRectMake(3, 3, 3, 3);
+    CGRect mishen2 = CGRectMake(7, 7, 2, 2);
+    CGPoint shoot = CGPointMake(0, 0);
+    BOOL hit = NO;
+    BOOL hit2 = NO;
+
     
-    
-    
-    
-    
+    for (int i =0; i <100; i++) {
+        
+        NSInteger x = arc4random()%11;
+        NSInteger y = arc4random()%11;
+        shoot = CGPointMake(x, y);
+        hit = CGRectContainsPoint(mishen, shoot);
+        hit2 = CGRectContainsPoint(mishen2, shoot);
+
+        
+        if (hit) {
+            NSLog(@"#%d GOTCHA! (%d,%d)",i, x, y);
+        }else if (hit2){
+            NSLog(@"#%d GOTCHA - 2! (%d,%d)",i, x, y);
+
+        }
+        
+    }
     
     
     

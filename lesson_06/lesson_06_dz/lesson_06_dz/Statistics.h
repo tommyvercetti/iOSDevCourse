@@ -22,7 +22,7 @@ typedef enum {
 @property (assign, nonatomic) enumData shootsOnGoal;
 @property (assign, nonatomic) enumData shootsOnTarget;
 
-/*
+
 @property (assign, nonatomic) CGPoint add;
 
 
@@ -30,7 +30,7 @@ typedef enum {
 
 +(CGPoint) addPointRandom;
 
-*/
+
 
 
 
