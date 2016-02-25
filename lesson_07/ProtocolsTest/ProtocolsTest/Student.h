@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Student : NSObject
+#import "Patien.h"
+
+@interface Student : NSObject <Patien>
+
+@property (strong, nonatomic) NSString* universityName;
+@property (strong, nonatomic) NSString* name;
+
+-(void) study;
+
 
 @end

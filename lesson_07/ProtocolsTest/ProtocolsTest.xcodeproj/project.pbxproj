@@ -13,6 +13,9 @@
 		E6FE1AD61C7F013F00B8F5B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FE1AD41C7F013F00B8F5B8 /* Main.storyboard */; };
 		E6FE1AD81C7F013F00B8F5B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6FE1AD71C7F013F00B8F5B8 /* Assets.xcassets */; };
 		E6FE1ADB1C7F013F00B8F5B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FE1AD91C7F013F00B8F5B8 /* LaunchScreen.storyboard */; };
+		E6FE1AE41C7F04A900B8F5B8 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FE1AE31C7F04A900B8F5B8 /* Student.m */; };
+		E6FE1AE71C7F04F000B8F5B8 /* Dancer.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FE1AE61C7F04F000B8F5B8 /* Dancer.m */; };
+		E6FE1AEE1C7F054700B8F5B8 /* Developer.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FE1AED1C7F054700B8F5B8 /* Developer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		E6FE1AD71C7F013F00B8F5B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6FE1ADA1C7F013F00B8F5B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6FE1ADC1C7F013F00B8F5B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6FE1AE21C7F04A900B8F5B8 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		E6FE1AE31C7F04A900B8F5B8 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		E6FE1AE51C7F04F000B8F5B8 /* Dancer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dancer.h; sourceTree = "<group>"; };
+		E6FE1AE61C7F04F000B8F5B8 /* Dancer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dancer.m; sourceTree = "<group>"; };
+		E6FE1AEC1C7F054700B8F5B8 /* Developer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Developer.h; sourceTree = "<group>"; };
+		E6FE1AED1C7F054700B8F5B8 /* Developer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Developer.m; sourceTree = "<group>"; };
+		E6FE1AEF1C7F094D00B8F5B8 /* Patien.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patien.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,13 @@
 		E6FE1ACA1C7F013F00B8F5B8 /* ProtocolsTest */ = {
 			isa = PBXGroup;
 			children = (
+				E6FE1AEF1C7F094D00B8F5B8 /* Patien.h */,
+				E6FE1AEC1C7F054700B8F5B8 /* Developer.h */,
+				E6FE1AED1C7F054700B8F5B8 /* Developer.m */,
+				E6FE1AE21C7F04A900B8F5B8 /* Student.h */,
+				E6FE1AE31C7F04A900B8F5B8 /* Student.m */,
+				E6FE1AE51C7F04F000B8F5B8 /* Dancer.h */,
+				E6FE1AE61C7F04F000B8F5B8 /* Dancer.m */,
 				E6FE1ACE1C7F013F00B8F5B8 /* AppDelegate.h */,
 				E6FE1ACF1C7F013F00B8F5B8 /* AppDelegate.m */,
 				E6FE1AD11C7F013F00B8F5B8 /* ViewController.h */,
@@ -150,9 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6FE1AEE1C7F054700B8F5B8 /* Developer.m in Sources */,
 				E6FE1AD31C7F013F00B8F5B8 /* ViewController.m in Sources */,
 				E6FE1AD01C7F013F00B8F5B8 /* AppDelegate.m in Sources */,
 				E6FE1ACD1C7F013F00B8F5B8 /* main.m in Sources */,
+				E6FE1AE41C7F04A900B8F5B8 /* Student.m in Sources */,
+				E6FE1AE71C7F04F000B8F5B8 /* Dancer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,4 +10,16 @@
 
 @protocol Patien <NSObject>
 
+
+@required
+@property (strong, nonatomic) NSString* name;
+- (BOOL) areYouOk;
+- (void) takePill;
+- (void) makeShot;
+
+@optional
+- (NSString*) howIsYourFamily;
+- (NSString*) howIsYourJob;
+
+
 @end

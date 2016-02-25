@@ -7,7 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface Developer : NSObject
+#import "Patien.h"
+
+@interface Developer : NSObject <Patien>
+
+@property (assign, nonatomic) CGFloat experience;
+@property (strong, nonatomic) NSString* name;
+
+
+
+-(void) work;
+
 
 @end

@@ -7,6 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import <UIKit/UIKit.h>
+#import "Patien.h"
+#import "Developer.h"
+#import "Student.h"
+#import "Dancer.h"
+
 
 @interface AppDelegate ()
 
@@ -17,6 +23,77 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    Dancer* dancer1 = [[Dancer alloc]init];
+    Dancer* dancer2 = [[Dancer alloc]init];
+    
+    Student* student1 = [[Student alloc]init];
+    Student* student2 = [[Student alloc]init];
+    Student* student3 = [[Student alloc]init];
+    
+    Developer* developer1 = [[Developer alloc]init];
+    
+    dancer1.name = @"dancer 1";
+    dancer2.name = @"dancer 2";
+    
+    student1.name = @"student 1";
+    student2.name = @"student 2";
+    student3.name = @"student 3";
+    
+    developer1.name = @"developer 1";
+
+    NSArray* patients = [NSArray arrayWithObjects:student2, dancer1, student1,developer1, dancer2, student3, nil];
+    
+    
+    /*
+     for (int i = 0; i< [patients count]; i++) {
+     id <Patien> patient = [patients objectAtIndex:i];
+     }
+     */
+    //равнозначное действие
+    
+    for (id <Patien> patient in patients) {
+        
+        if ([patient conformsToProtocol:@protocol(Patien)]) {
+            
+        
+        
+        NSLog(@"PAtient name = %@", patient.name);
+        
+                if ([patient respondsToSelector:@selector(howIsYourFamily)]) {
+                    NSLog(@"How is your family? \n%@", [patient howIsYourFamily]);
+                }
+        
+                if ([patient respondsToSelector:@selector(howIsYourJob)]) {
+                    NSLog(@"How is your job? \n%@", [patient howIsYourJob]);
+                }
+        
+
+        
+        
+                if (![patient areYouOk]) {
+                    [patient takePill];
+            
+                    if (![patient areYouOk]) {
+                [patient makeShot];
+                    }
+                }
+    
+    
+    
+            } else{
+                NSLog(@"Fake!!!!");
+            }
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
     return YES;
 }
 

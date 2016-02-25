@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Dancer : NSObject
+#import "Patien.h"
+
+@interface Dancer : NSObject <Patien>
+
+@property (strong, nonatomic) NSString* favoriteDance;
+@property (strong, nonatomic) NSString* name;
+
+
+- (void) dance;
+
 
 @end
