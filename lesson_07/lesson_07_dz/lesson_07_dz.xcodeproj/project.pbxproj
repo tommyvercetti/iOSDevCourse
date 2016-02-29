@@ -26,6 +26,9 @@
 		E6FE1B081C8095CF00B8F5B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6FE1B0B1C8095CF00B8F5B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6FE1B0D1C8095CF00B8F5B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6FE1B141C8096CF00B8F5B8 /* Jumpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Jumpers.h; path = ../Jumpers.h; sourceTree = "<group>"; };
+		E6FE1B151C8096D900B8F5B8 /* Swimmers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Swimmers.h; path = ../Swimmers.h; sourceTree = "<group>"; };
+		E6FE1B161C8096E500B8F5B8 /* Runners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Runners.h; path = ../Runners.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,9 @@
 		E6FE1AFB1C8095CF00B8F5B8 /* lesson_07_dz */ = {
 			isa = PBXGroup;
 			children = (
+				E6FE1B141C8096CF00B8F5B8 /* Jumpers.h */,
+				E6FE1B151C8096D900B8F5B8 /* Swimmers.h */,
+				E6FE1B161C8096E500B8F5B8 /* Runners.h */,
 				E6FE1AFF1C8095CF00B8F5B8 /* AppDelegate.h */,
 				E6FE1B001C8095CF00B8F5B8 /* AppDelegate.m */,
 				E6FE1B021C8095CF00B8F5B8 /* ViewController.h */,

@@ -10,4 +10,12 @@
 
 @protocol Jumpers <NSObject>
 
+@required
+@property (strong, nonatomic) NSString* name;
+@property (assign, nonatomic) NSInteger highOfJump;
+@property (assign, nonatomic) NSInteger weightOfSportsmen;
+
+@optional
+-(NSString*) howOldAreYou;
+
 @end
