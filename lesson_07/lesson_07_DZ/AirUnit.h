@@ -10,4 +10,15 @@
 
 @protocol AirUnit <NSObject>
 
+@required
+@property (strong, nonatomic) NSString* name;
+@property (assign, nonatomic) NSInteger rateHP;
+@property (strong, nonatomic) NSString* weaponRange;
+-(void) flyAround;
+
+@optional
+@property (strong, nonatomic) NSString* clanName;
+-(NSInteger) timeOfAirWeaponReload;
+-(void) quoteAir;
+
 @end

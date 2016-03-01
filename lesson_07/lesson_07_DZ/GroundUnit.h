@@ -10,4 +10,16 @@
 
 @protocol GroundUnit <NSObject>
 
+
+@required
+@property (strong, nonatomic) NSString* name;
+@property (assign, nonatomic) NSInteger rateHP;
+@property (strong, nonatomic) NSString* weapon;
+-(void) walkAround;
+
+@optional
+@property (strong, nonatomic) NSString* clanName;
+-(NSInteger) timeOfGroundWeaponReload;
+-(void) quoteGround;
+
 @end

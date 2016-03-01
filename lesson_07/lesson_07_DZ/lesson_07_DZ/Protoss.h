@@ -7,7 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WorkerUnit.h"
+#import "AirUnit.h"
+#import "GroundUnit.h"
 
-@interface Protoss : NSObject
+@interface Protoss : NSObject <WorkerUnit, AirUnit, GroundUnit>
+
+@property (strong, nonatomic)NSString* name;
+@property (assign, nonatomic) NSInteger rateHP;
+@property (strong, nonatomic) NSString* hammer;
+
+@property (strong, nonatomic) NSString* weaponRange;
+
+@property (strong, nonatomic) NSString* weapon;
+
+
+@property (strong, nonatomic)NSString* favoriteTech;
+
+-(void) makePsyAttack;
 
 @end

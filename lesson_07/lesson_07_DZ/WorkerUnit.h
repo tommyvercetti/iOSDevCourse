@@ -10,4 +10,15 @@
 
 @protocol WorkerUnit <NSObject>
 
+@required
+@property (strong, nonatomic) NSString* name;
+@property (assign, nonatomic) NSInteger rateHP;
+@property (strong, nonatomic) NSString* hammer;
+-(void) mineMinerals;
+
+@optional
+@property (strong, nonatomic) NSString* clanName;
+-(NSInteger) timeOfWorkerWeaponReload;
+-(void) quoteWorker;
+
 @end
