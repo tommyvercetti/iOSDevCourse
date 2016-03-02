@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WorkerUnit.h"
 
-@interface Terran : NSObject
+
+@interface Terran : NSObject <WorkerUnit>
+
+
+
+@property (strong, nonatomic)NSString* name;
+
+
+
 
 @end

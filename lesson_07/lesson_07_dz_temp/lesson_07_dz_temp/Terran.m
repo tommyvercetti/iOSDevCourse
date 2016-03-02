@@ -10,4 +10,13 @@
 
 @implementation Terran
 
+
+-(void) quoteWorker{
+    NSLog(@"i'm working");
+}
+
+
+
+
+
 @end

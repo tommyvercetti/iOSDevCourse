@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @protocol WorkerUnit <NSObject>
+
+
+@required
+@property (strong, nonatomic) NSString* name;
+
+-(void) quoteWorker;
+@optional
+
 
 @end
