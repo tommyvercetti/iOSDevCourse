@@ -38,7 +38,7 @@
     // Override point for customization after application launch.
     
     
-    
+    /*
     Terran* scv = [[Terran alloc]init];
     Terran* marine = [[Terran alloc]init];
     Terran* valkyrie = [[Terran alloc]init];
@@ -62,6 +62,56 @@
     drone.name = @"Creep";
     zergling.name = @"Doggie";
     mutalisk.name = @"Mutaliskus";
+    */
+    
+    Terran* terran1 = [[Terran alloc]init];
+    Terran* terran2 = [[Terran alloc]init];
+    Terran* terran3 = [[Terran alloc]init];
+    
+    terran1.name = @"scv - Rab";
+    terran2.name = @"marine - James Eugene Raynor";
+    terran3.name = @"valkyrie - Sarah Connor";
+    
+    Protoss* protoss1 = [[Protoss alloc]init];
+    Protoss* protoss2 = [[Protoss alloc]init];
+    Protoss* protoss3 = [[Protoss alloc]init];
+    
+    protoss1.name = @"probe - c3po";
+    protoss2.name = @"zealot - Zeratul";
+    protoss3.name = @"shuttle - Endaevor";
+    
+    Zerg* zerg1 = [[Zerg alloc]init];
+    Zerg* zerg2 = [[Zerg alloc]init];
+    Zerg* zerg3 = [[Zerg alloc]init];
+    
+    zerg1.name = @"drone - Creep";
+    zerg2.name = @"zergling - Doggie";
+    zerg3.name = @"mutalisk - Mutaliskus";
+    
+    
+    NSArray* groupOfUnits = [NSArray arrayWithObjects:terran1, terran2, terran3, protoss1, protoss2, protoss3, zerg1, zerg2, zerg3, nil];
+    
+    NSLog(@"units spawning on the map");
+    
+    for (id <WorkerUnit,AirUnit,GroundUnit> unit in groupOfUnits) {
+        if ([unit conformsToProtocol:@protocol(WorkerUnit)]){
+            
+            NSLog(@"Unit spawned - %@", unit.name);
+            
+           
+            
+            
+        
+            /*
+            if ([unit respondsToSelector:@selector(whoAreYou)]) {
+                NSLog(@"You are a worker unit, please, do your methods!",[unit mineMinerals]);
+            }*/
+        }
+    }
+    
+    
+    
+    
     
     
     

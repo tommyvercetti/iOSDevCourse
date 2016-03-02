@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "enums.h"
 
 @protocol WorkerUnit <NSObject>
 

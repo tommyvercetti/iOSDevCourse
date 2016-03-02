@@ -38,6 +38,7 @@
 		E6FE1B611C859D9100B8F5B8 /* Protoss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Protoss.m; sourceTree = "<group>"; };
 		E6FE1B631C85AAB100B8F5B8 /* Zerg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zerg.h; sourceTree = "<group>"; };
 		E6FE1B641C85AAB100B8F5B8 /* Zerg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zerg.m; sourceTree = "<group>"; };
+		E6FE1B661C8741AC00B8F5B8 /* enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enums.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +71,7 @@
 		E6FE1B221C846D1800B8F5B8 /* lesson_07_DZ */ = {
 			isa = PBXGroup;
 			children = (
+				E6FE1B661C8741AC00B8F5B8 /* enums.h */,
 				E6FE1B5A1C847FBB00B8F5B8 /* WorkerUnit.h */,
 				E6FE1B5B1C847FC300B8F5B8 /* AirUnit.h */,
 				E6FE1B5C1C847FD300B8F5B8 /* GroundUnit.h */,

@@ -11,15 +11,16 @@
 
 @implementation Terran 
 
--(void) exploreUniverse{
-    
-}
+
+//дописать метод, который рандомно присваивает профу
+
+
 
 #pragma mark -Worker
 
 
 -(void) mineMinerals{
-    NSLog(@"Going to mine");
+    NSLog(@"I'm Going to mine");
 }
 
 

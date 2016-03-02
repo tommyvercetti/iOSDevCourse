@@ -14,6 +14,7 @@
 @interface Terran : NSObject <WorkerUnit, AirUnit, GroundUnit>
 
 
+
 @property (strong, nonatomic)NSString* name;
 @property (assign, nonatomic) NSInteger rateHP;
 @property (strong, nonatomic) NSString* hammer;
@@ -25,7 +26,8 @@
 
 @property (strong, nonatomic)NSString* favoritePlanet;
 
--(void) exploreUniverse;
+
+-(NSInteger) whoAreYou;
 
 
 @end

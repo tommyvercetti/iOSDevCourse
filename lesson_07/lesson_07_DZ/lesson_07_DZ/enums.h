@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol enums <NSObject>
+typedef enum{
+    unitWorkrer,
+    unitAir,
+    unitGround,
+}enumUnitClass;
 
-@end
