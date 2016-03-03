@@ -13,7 +13,7 @@
 		E6FE1B7E1C87457A00B8F5B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FE1B7C1C87457A00B8F5B8 /* Main.storyboard */; };
 		E6FE1B801C87457A00B8F5B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6FE1B7F1C87457A00B8F5B8 /* Assets.xcassets */; };
 		E6FE1B831C87457A00B8F5B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FE1B811C87457A00B8F5B8 /* LaunchScreen.storyboard */; };
-		E6FE1B8C1C8745AF00B8F5B8 /* Terran.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FE1B8B1C8745AF00B8F5B8 /* Terran.m */; };
+		E6FE1B971C88790300B8F5B8 /* Runner.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FE1B961C88790300B8F5B8 /* Runner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,11 @@
 		E6FE1B7F1C87457A00B8F5B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6FE1B821C87457A00B8F5B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6FE1B841C87457A00B8F5B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E6FE1B8A1C8745AF00B8F5B8 /* Terran.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Terran.h; sourceTree = "<group>"; };
-		E6FE1B8B1C8745AF00B8F5B8 /* Terran.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Terran.m; sourceTree = "<group>"; };
-		E6FE1B8D1C8745BD00B8F5B8 /* WorkerUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkerUnit.h; sourceTree = "<group>"; };
+		E6FE1B921C8871A800B8F5B8 /* Jumpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jumpers.h; sourceTree = "<group>"; };
+		E6FE1B931C8873C900B8F5B8 /* Swimmers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swimmers.h; sourceTree = "<group>"; };
+		E6FE1B941C88763100B8F5B8 /* Runners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runners.h; sourceTree = "<group>"; };
+		E6FE1B951C88790300B8F5B8 /* Runner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runner.h; sourceTree = "<group>"; };
+		E6FE1B961C88790300B8F5B8 /* Runner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +64,8 @@
 		E6FE1B721C87457A00B8F5B8 /* lesson_07_dz_temp */ = {
 			isa = PBXGroup;
 			children = (
-				E6FE1B8D1C8745BD00B8F5B8 /* WorkerUnit.h */,
-				E6FE1B8A1C8745AF00B8F5B8 /* Terran.h */,
-				E6FE1B8B1C8745AF00B8F5B8 /* Terran.m */,
+				E6FE1B981C887AD400B8F5B8 /* protocols */,
+				E6FE1B991C887AEE00B8F5B8 /* classes */,
 				E6FE1B761C87457A00B8F5B8 /* AppDelegate.h */,
 				E6FE1B771C87457A00B8F5B8 /* AppDelegate.m */,
 				E6FE1B791C87457A00B8F5B8 /* ViewController.h */,
@@ -84,6 +85,25 @@
 				E6FE1B741C87457A00B8F5B8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E6FE1B981C887AD400B8F5B8 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E6FE1B921C8871A800B8F5B8 /* Jumpers.h */,
+				E6FE1B931C8873C900B8F5B8 /* Swimmers.h */,
+				E6FE1B941C88763100B8F5B8 /* Runners.h */,
+			);
+			name = protocols;
+			sourceTree = "<group>";
+		};
+		E6FE1B991C887AEE00B8F5B8 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				E6FE1B951C88790300B8F5B8 /* Runner.h */,
+				E6FE1B961C88790300B8F5B8 /* Runner.m */,
+			);
+			name = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,9 +178,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6FE1B7B1C87457A00B8F5B8 /* ViewController.m in Sources */,
+				E6FE1B971C88790300B8F5B8 /* Runner.m in Sources */,
 				E6FE1B781C87457A00B8F5B8 /* AppDelegate.m in Sources */,
 				E6FE1B751C87457A00B8F5B8 /* main.m in Sources */,
-				E6FE1B8C1C8745AF00B8F5B8 /* Terran.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +329,7 @@
 				E6FE1B891C87457A00B8F5B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

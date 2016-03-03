@@ -11,7 +11,7 @@
 #import "AirUnit.h"
 #import "GroundUnit.h"
 
-@interface Zerg : NSObject <WorkerUnit, AirUnit, GroundUnit>
+@interface Zerg : NSObject <AirUnit>
 
 @property (strong, nonatomic)NSString* name;
 @property (assign, nonatomic) NSInteger rateHP;

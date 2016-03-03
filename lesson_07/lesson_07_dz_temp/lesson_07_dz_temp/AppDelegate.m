@@ -19,44 +19,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    Terran* terran1 = [[Terran alloc]init];
-    Terran* terran2 = [[Terran alloc]init];
-    Terran* terran3 = [[Terran alloc]init];
-    Terran* terran4 = [[Terran alloc]init];
-    Terran* terran5 = [[Terran alloc]init];
-    Terran* terran6 = [[Terran alloc]init];
-    
-    terran1.name = @"name1";
-    terran2.name = @"name2";
-    terran3.name = @"name3";
-    terran4.name = @"name4";
-    terran5.name = @"name5";
-    terran6.name = @"name6";
-    
-    
-    NSArray* groupOfUnits = [NSArray arrayWithObjects:terran1, terran2, terran3,terran4,terran5,terran6, nil];
     
     
     
     
-    NSLog(@"array of units is cretaed");
     
-    for (id<WorkerUnit> unit in groupOfUnits) {
-        
-        if ([unit conformsToProtocol:@protocol(WorkerUnit)]){
-            NSLog(@"Unit %@ is conforms to protocol WorkerUnit", unit.name);
-            
-            if ([unit respondsToSelector:@selector(quoteWorker)]) {
-                NSLog(@"Worker %@ says - ",unit.name);
-                [unit quoteWorker];
-                
-                
-                
-            }
-            
-        }
-        
-    }
+    
     
     
     

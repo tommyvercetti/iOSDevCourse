@@ -10,4 +10,14 @@
 
 @protocol Runners <NSObject>
 
+@required
+@property (assign, nonatomic) int runnerSpeed;
+
+-(void) run;
+
+@optional
+-(void) runMarathon;
+-(void) runWithBarriers;
+
+
 @end

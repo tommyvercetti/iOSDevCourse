@@ -14,7 +14,7 @@
 @required
 @property (strong, nonatomic) NSString* name;
 @property (assign, nonatomic) NSInteger rateHP;
-@property (strong, nonatomic) NSString* weaponRange;
+@property (assign, nonatomic) NSInteger weaponRange;
 -(void) flyAround;
 
 @optional

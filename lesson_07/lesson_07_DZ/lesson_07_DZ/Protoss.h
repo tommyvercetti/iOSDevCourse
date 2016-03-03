@@ -17,12 +17,15 @@
 @property (assign, nonatomic) NSInteger rateHP;
 @property (strong, nonatomic) NSString* hammer;
 
-@property (strong, nonatomic) NSString* weaponRange;
+//@property (assign, nonatomic) NSInteger weaponRange;
 
 @property (strong, nonatomic) NSString* weapon;
 
 
 @property (strong, nonatomic)NSString* favoriteTech;
+
+@property (strong, nonatomic) NSString* clanName;
+
 
 -(void) makePsyAttack;
 

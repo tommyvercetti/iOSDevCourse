@@ -8,6 +8,28 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum{
+    jumperTypeInLenght,
+    jumperTypeInHeight,
+}jumperType;
+
+typedef enum{
+    joggingLeft
+    joggingRight
+}joggingLeg;
+
 @protocol Jumpers <NSObject>
+
+@required
+@property (assign, nonatomic) jumperType jumpType;
+@property (assign, nonatomic) joggingLeg jogging;
+@property (assign, nonatomic) float record;
+
+-(void) jump;
+-(void) flee;
+
+@optional
+//optional methods here
+
 
 @end

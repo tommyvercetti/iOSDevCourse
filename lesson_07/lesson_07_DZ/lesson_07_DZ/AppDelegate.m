@@ -69,16 +69,48 @@
     Terran* terran3 = [[Terran alloc]init];
     
     terran1.name = @"scv - Rab";
+    terran1.rateHP = arc4random()%55;
+    terran1.hammer = @"wooden kirk";
+    terran1.weaponRange = 1;
+    terran1.clanName = @"red clan";
+    
     terran2.name = @"marine - James Eugene Raynor";
+    terran2.rateHP = arc4random()%55;
+    terran2.hammer = @"stone kirk";
+    terran2.weaponRange = 1;
+    terran2.clanName = @"blue clan";
+    
     terran3.name = @"valkyrie - Sarah Connor";
+    terran3.rateHP = arc4random()%55;
+    terran3.hammer = @"iron kirk";
+    terran3.weaponRange = 1;
+    terran3.clanName = @"yellow clan";
+    
     
     Protoss* protoss1 = [[Protoss alloc]init];
     Protoss* protoss2 = [[Protoss alloc]init];
     Protoss* protoss3 = [[Protoss alloc]init];
     
     protoss1.name = @"probe - c3po";
+    protoss1.rateHP = arc4random()%55;
+    protoss1.hammer = @"wooden kirk";
+    //protoss1.weaponRange = 1;
+    protoss1.clanName = @"red clan";
+    
     protoss2.name = @"zealot - Zeratul";
+    protoss2.rateHP = arc4random()%55;
+    protoss2.hammer = @"wooden kirk";
+    //protoss2.weaponRange = 1;
+    protoss2.clanName = @"red clan";
+    
+    
     protoss3.name = @"shuttle - Endaevor";
+    protoss3.rateHP = arc4random()%55;
+    protoss3.hammer = @"wooden kirk";
+    //protoss3.weaponRange = 1;
+    protoss3.clanName = @"red clan";
+    
+    
     
     Zerg* zerg1 = [[Zerg alloc]init];
     Zerg* zerg2 = [[Zerg alloc]init];
@@ -92,21 +124,28 @@
     NSArray* groupOfUnits = [NSArray arrayWithObjects:terran1, terran2, terran3, protoss1, protoss2, protoss3, zerg1, zerg2, zerg3, nil];
     
     NSLog(@"units spawning on the map");
+    NSLog(@"******************************************************************");
+
     
     for (id <WorkerUnit,AirUnit,GroundUnit> unit in groupOfUnits) {
         if ([unit conformsToProtocol:@protocol(WorkerUnit)]){
             
-            NSLog(@"Unit spawned - %@", unit.name);
-            
-           
-            
-            
-        
-            /*
-            if ([unit respondsToSelector:@selector(whoAreYou)]) {
-                NSLog(@"You are a worker unit, please, do your methods!",[unit mineMinerals]);
-            }*/
+            NSLog(@"Unit spawned name- %@", unit.name);
+            NSLog(@"Unit spawned HP- %ld", unit.rateHP);
+            NSLog(@"Unit hammer type- %@", unit.hammer);
+            //NSLog(@"Unit weapon range- %@", unit.weaponRange);
+            NSLog(@"Unit clan- %@", unit.clanName);
+            NSLog(@"also unit required from protocol methods**********************");
+            [unit mineMinerals];
+            NSLog(@"also unit optional from protocol methods**********************");
+            [unit timeOfAirWeaponReload];
+            [unit quoteWorker];
+            NSLog(@"******************************************************************");
+            if ([unit respondsToSelector:@selector(weaponRange)]) {
+                NSLog(@"Weapon range is -%ld",(long)[unit weaponRange]);
+            }
         }
+        
     }
     
     

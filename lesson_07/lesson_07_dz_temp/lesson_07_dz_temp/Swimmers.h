@@ -8,6 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum {
+    SwimmingStyleFree
+    SwimmingStyleButterfly
+    SwimmingStyleOnback
+    SwimmingStyleBrass
+}swimmerType;
+
 @protocol Swimmers <NSObject>
+
+@property (assign, nonatomic) int maxSpeed;
+@property (assign, nonatomic) swimmerType swimType;
+
+-(void) swim;
+-(void) dive;
+
+@optional
+//optional methods here
 
 @end

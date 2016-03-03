@@ -10,21 +10,24 @@
 #import "WorkerUnit.h"
 #import "AirUnit.h"
 #import "GroundUnit.h"
+#import <UIKit/UIKit.h>
 
-@interface Terran : NSObject <WorkerUnit, AirUnit, GroundUnit>
+@interface Terran : NSObject <WorkerUnit>
 
 
 
-@property (strong, nonatomic)NSString* name;
+@property (strong, nonatomic) NSString* name;
 @property (assign, nonatomic) NSInteger rateHP;
 @property (strong, nonatomic) NSString* hammer;
 
-@property (strong, nonatomic) NSString* weaponRange;
+@property (assign, nonatomic) NSInteger weaponRange;
 
 @property (strong, nonatomic) NSString* weapon;
 
 
 @property (strong, nonatomic)NSString* favoritePlanet;
+
+@property (strong, nonatomic) NSString* clanName;
 
 
 -(NSInteger) whoAreYou;
