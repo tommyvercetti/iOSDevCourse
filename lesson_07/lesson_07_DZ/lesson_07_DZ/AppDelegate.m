@@ -140,10 +140,10 @@
             NSLog(@"also unit optional from protocol methods**********************");
             [unit timeOfAirWeaponReload];
             [unit quoteWorker];
-            NSLog(@"******************************************************************");
             if ([unit respondsToSelector:@selector(weaponRange)]) {
                 NSLog(@"Weapon range is -%ld",(long)[unit weaponRange]);
             }
+            NSLog(@"******************************************************************");
         }
         
     }
