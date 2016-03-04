@@ -16,6 +16,8 @@
 		E6FE1B5F1C8480BC00B8F5B8 /* Terran.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FE1B5E1C8480BC00B8F5B8 /* Terran.m */; };
 		E6FE1B621C859D9100B8F5B8 /* Protoss.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FE1B611C859D9100B8F5B8 /* Protoss.m */; };
 		E6FE1B651C85AAB100B8F5B8 /* Zerg.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FE1B641C85AAB100B8F5B8 /* Zerg.m */; };
+		E6FE1B9C1C89B9D400B8F5B8 /* ProtoLife.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FE1B9B1C89B9D400B8F5B8 /* ProtoLife.m */; };
+		E6FE1B9F1C89BA4500B8F5B8 /* Hybrids.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FE1B9E1C89BA4500B8F5B8 /* Hybrids.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,10 @@
 		E6FE1B631C85AAB100B8F5B8 /* Zerg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zerg.h; sourceTree = "<group>"; };
 		E6FE1B641C85AAB100B8F5B8 /* Zerg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zerg.m; sourceTree = "<group>"; };
 		E6FE1B661C8741AC00B8F5B8 /* enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enums.h; sourceTree = "<group>"; };
+		E6FE1B9A1C89B9D400B8F5B8 /* ProtoLife.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtoLife.h; sourceTree = "<group>"; };
+		E6FE1B9B1C89B9D400B8F5B8 /* ProtoLife.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtoLife.m; sourceTree = "<group>"; };
+		E6FE1B9D1C89BA4500B8F5B8 /* Hybrids.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hybrids.h; sourceTree = "<group>"; };
+		E6FE1B9E1C89BA4500B8F5B8 /* Hybrids.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hybrids.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,10 @@
 				E6FE1B611C859D9100B8F5B8 /* Protoss.m */,
 				E6FE1B631C85AAB100B8F5B8 /* Zerg.h */,
 				E6FE1B641C85AAB100B8F5B8 /* Zerg.m */,
+				E6FE1B9D1C89BA4500B8F5B8 /* Hybrids.h */,
+				E6FE1B9E1C89BA4500B8F5B8 /* Hybrids.m */,
+				E6FE1B9A1C89B9D400B8F5B8 /* ProtoLife.h */,
+				E6FE1B9B1C89B9D400B8F5B8 /* ProtoLife.m */,
 				E6FE1B261C846D1800B8F5B8 /* AppDelegate.h */,
 				E6FE1B271C846D1800B8F5B8 /* AppDelegate.m */,
 				E6FE1B291C846D1800B8F5B8 /* ViewController.h */,
@@ -174,9 +184,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6FE1B621C859D9100B8F5B8 /* Protoss.m in Sources */,
+				E6FE1B9F1C89BA4500B8F5B8 /* Hybrids.m in Sources */,
 				E6FE1B2B1C846D1800B8F5B8 /* ViewController.m in Sources */,
 				E6FE1B281C846D1800B8F5B8 /* AppDelegate.m in Sources */,
 				E6FE1B651C85AAB100B8F5B8 /* Zerg.m in Sources */,
+				E6FE1B9C1C89B9D400B8F5B8 /* ProtoLife.m in Sources */,
 				E6FE1B251C846D1800B8F5B8 /* main.m in Sources */,
 				E6FE1B5F1C8480BC00B8F5B8 /* Terran.m in Sources */,
 			);

@@ -13,17 +13,17 @@
 
 @interface Zerg : NSObject <AirUnit>
 
+//AIR protocol****************
+//************required properties
 @property (strong, nonatomic)NSString* name;
 @property (assign, nonatomic) NSInteger rateHP;
-@property (strong, nonatomic) NSString* hammer;
-
-@property (strong, nonatomic) NSString* weaponRange;
-
-@property (strong, nonatomic) NSString* weapon;
-
-@property (strong, nonatomic)NSString* favoriteHive;
-
--(void) makeSlime;
+@property (assign, nonatomic) NSInteger weaponRange;
+//************optional properties
+@property (strong, nonatomic) NSString* clanName;
+////self properties
+//@property (strong, nonatomic)NSString* favoriteHive;
+////self methods
+//-(void) makeSlime;
 
 
 @end

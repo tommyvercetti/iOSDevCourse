@@ -10,4 +10,9 @@
 
 @implementation ProtoLife
 
+- (void) saySomething{
+    NSLog(@"something");
+}
+
+
 @end

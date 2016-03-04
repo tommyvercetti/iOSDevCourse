@@ -15,22 +15,19 @@
 @interface Terran : NSObject <WorkerUnit>
 
 
-
+//WORKER protocol****************
+//************required properties
 @property (strong, nonatomic) NSString* name;
 @property (assign, nonatomic) NSInteger rateHP;
 @property (strong, nonatomic) NSString* hammer;
-
-@property (assign, nonatomic) NSInteger weaponRange;
-
-@property (strong, nonatomic) NSString* weapon;
-
-
-@property (strong, nonatomic)NSString* favoritePlanet;
-
+//************optional properties
 @property (strong, nonatomic) NSString* clanName;
 
 
--(NSInteger) whoAreYou;
+//self properties
+//@property (strong, nonatomic)NSString* favoritePlanet;
+//self methods
+//-(void) whoAreYou;
 
 
 @end

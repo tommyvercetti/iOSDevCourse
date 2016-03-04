@@ -10,4 +10,9 @@
 
 @interface ProtoLife : NSObject
 
+@property (strong, nonatomic) NSString* name;
+@property (assign, nonatomic) NSInteger rateHP;
+
+- (void) saySomething;
+
 @end

@@ -18,7 +18,7 @@
 
 
 -(void) mineMinerals{
-    NSLog(@"Going to mine");
+    NSLog(@"I'm Going to mine");
 }
 
 

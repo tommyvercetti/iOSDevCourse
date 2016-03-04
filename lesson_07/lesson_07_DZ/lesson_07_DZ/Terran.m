@@ -14,7 +14,9 @@
 
 //дописать метод, который рандомно присваивает профу
 
-
+-(void) whoAreYou{
+    NSLog(@"who u are method") ;
+}
 
 
 #pragma mark -Worker
@@ -36,7 +38,7 @@
 -(void) quoteWorker{
     NSLog(@"Ready for work, Sir!");
 }
-
+/*
 #pragma mark -Air
 
 
@@ -74,5 +76,5 @@
 -(void) quoteGround{
     NSLog(@"I'm a ground walker");
 }
-
+*/
 @end

@@ -13,20 +13,34 @@
 
 @interface Protoss : NSObject <WorkerUnit, AirUnit, GroundUnit>
 
+//WORKER protocol****************
+//************required properties
 @property (strong, nonatomic)NSString* name;
 @property (assign, nonatomic) NSInteger rateHP;
 @property (strong, nonatomic) NSString* hammer;
 
-//@property (assign, nonatomic) NSInteger weaponRange;
-
-@property (strong, nonatomic) NSString* weapon;
-
-
-@property (strong, nonatomic)NSString* favoriteTech;
-
+//************optional properties
 @property (strong, nonatomic) NSString* clanName;
 
 
--(void) makePsyAttack;
+
+
+//AIR protocol****************
+//************required properties
+//similar to worker
+@property (assign, nonatomic) NSInteger weaponRange;
+//************optional properties
+//similar to worker
+
+
+//AIR protocol****************
+//************required properties
+//similar to worker
+@property (strong, nonatomic) NSString* weapon;
+
+//self properties
+//@property (strong, nonatomic)NSString* favoriteTech;
+////self methods
+//-(void) makePsyAttack;
 
 @end

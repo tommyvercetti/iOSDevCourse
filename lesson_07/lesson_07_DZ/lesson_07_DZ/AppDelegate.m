@@ -25,6 +25,8 @@
 #import "Terran.h"
 #import "Protoss.h"
 #import "Zerg.h"
+#import "Hybrids.h"
+#import "ProtoLife.h"
 
 
 @interface AppDelegate ()
@@ -38,32 +40,6 @@
     // Override point for customization after application launch.
     
     
-    /*
-    Terran* scv = [[Terran alloc]init];
-    Terran* marine = [[Terran alloc]init];
-    Terran* valkyrie = [[Terran alloc]init];
-    
-    scv.name = @"Rab";
-    marine.name = @"James Eugene Raynor";
-    valkyrie.name = @"Sarah Connor";
-    
-    Protoss* probe = [[Protoss alloc]init];
-    Protoss* zealot = [[Protoss alloc]init];
-    Protoss* shuttle = [[Protoss alloc]init];
-    
-    probe.name = @"c3po";
-    zealot.name = @"Zeratul";
-    shuttle.name = @"Endaevor";
-    
-    Zerg* drone = [[Zerg alloc]init];
-    Zerg* zergling = [[Zerg alloc]init];
-    Zerg* mutalisk = [[Zerg alloc]init];
-    
-    drone.name = @"Creep";
-    zergling.name = @"Doggie";
-    mutalisk.name = @"Mutaliskus";
-    */
-    
     Terran* terran1 = [[Terran alloc]init];
     Terran* terran2 = [[Terran alloc]init];
     Terran* terran3 = [[Terran alloc]init];
@@ -71,20 +47,22 @@
     terran1.name = @"scv - Rab";
     terran1.rateHP = arc4random()%55;
     terran1.hammer = @"wooden kirk";
-    terran1.weaponRange = 1;
     terran1.clanName = @"red clan";
+    
     
     terran2.name = @"marine - James Eugene Raynor";
     terran2.rateHP = arc4random()%55;
     terran2.hammer = @"stone kirk";
-    terran2.weaponRange = 1;
-    terran2.clanName = @"blue clan";
+    terran2.clanName = @"red clan";
+
+    
     
     terran3.name = @"valkyrie - Sarah Connor";
     terran3.rateHP = arc4random()%55;
     terran3.hammer = @"iron kirk";
-    terran3.weaponRange = 1;
-    terran3.clanName = @"yellow clan";
+    terran3.clanName = @"red clan";
+
+    
     
     
     Protoss* protoss1 = [[Protoss alloc]init];
@@ -94,21 +72,27 @@
     protoss1.name = @"probe - c3po";
     protoss1.rateHP = arc4random()%55;
     protoss1.hammer = @"wooden kirk";
-    //protoss1.weaponRange = 1;
-    protoss1.clanName = @"red clan";
+    protoss1.clanName = @"yellow clan";
+    protoss1.weaponRange = 1;
+    protoss1.weapon = @"turret";
+    
+    
+    
     
     protoss2.name = @"zealot - Zeratul";
     protoss2.rateHP = arc4random()%55;
     protoss2.hammer = @"wooden kirk";
-    //protoss2.weaponRange = 1;
-    protoss2.clanName = @"red clan";
+    protoss2.clanName = @"yellow clan";
+
+    
     
     
     protoss3.name = @"shuttle - Endaevor";
     protoss3.rateHP = arc4random()%55;
     protoss3.hammer = @"wooden kirk";
-    //protoss3.weaponRange = 1;
-    protoss3.clanName = @"red clan";
+    protoss3.clanName = @"yellow clan";
+
+    
     
     
     
@@ -116,9 +100,49 @@
     Zerg* zerg2 = [[Zerg alloc]init];
     Zerg* zerg3 = [[Zerg alloc]init];
     
-    zerg1.name = @"drone - Creep";
+    zerg1.name = @"probe - c3po";
+    zerg1.rateHP = arc4random()%55;
+    zerg1.weaponRange = 1;
+    zerg1.clanName = @"blue clan";
+    
+    
+    
+    
     zerg2.name = @"zergling - Doggie";
+    zerg2.rateHP = arc4random()%43;
+    zerg2.weaponRange = 2;
+    zerg2.clanName = @"blue clan";
+
+    
     zerg3.name = @"mutalisk - Mutaliskus";
+    zerg2.rateHP = arc4random()%43;
+    zerg2.weaponRange = 2;
+    zerg2.clanName = @"blue clan";
+
+    
+    Hybrids* hybrid1 = [[Hybrids alloc]init];
+    Hybrids* hybrid2 = [[Hybrids alloc]init];
+    Hybrids* hybrid3 = [[Hybrids alloc]init];
+    
+    hybrid1.name = @"hybrid - vasya";
+    hybrid1.rateHP = arc4random()%33;
+    hybrid1.weapon = @"golden kirk";
+    hybrid1.clanName = @"green clan";
+    
+    hybrid2.name = @"hybrid - vasya";
+    hybrid2.rateHP = arc4random()%33;
+    hybrid2.weapon = @"golden kirk";
+    hybrid2.clanName = @"green clan";
+
+    
+    hybrid3.name = @"hybrid - vasya";
+    hybrid3.rateHP = arc4random()%33;
+    hybrid3.weapon = @"golden kirk";
+    hybrid3.clanName = @"green clan";
+
+    
+    
+    
     
     
     NSArray* groupOfUnits = [NSArray arrayWithObjects:terran1, terran2, terran3, protoss1, protoss2, protoss3, zerg1, zerg2, zerg3, nil];
@@ -128,23 +152,24 @@
 
     
     for (id <WorkerUnit,AirUnit,GroundUnit> unit in groupOfUnits) {
+        
         if ([unit conformsToProtocol:@protocol(WorkerUnit)]){
             
-            NSLog(@"Unit spawned name- %@", unit.name);
-            NSLog(@"Unit spawned HP- %ld", unit.rateHP);
-            NSLog(@"Unit hammer type- %@", unit.hammer);
-            //NSLog(@"Unit weapon range- %@", unit.weaponRange);
-            NSLog(@"Unit clan- %@", unit.clanName);
+            NSLog(@"Unit spawned name is - %@, with HP - %ld, with hammer type - %@, respond to clan - %@, and favorite planet - @", unit.name, unit.rateHP, unit.hammer, unit.clanName);
+            
+            
             NSLog(@"also unit required from protocol methods**********************");
             [unit mineMinerals];
+            
             NSLog(@"also unit optional from protocol methods**********************");
-            [unit timeOfAirWeaponReload];
+            [unit timeOfWorkerWeaponReload];
             [unit quoteWorker];
+           } 
             if ([unit respondsToSelector:@selector(weaponRange)]) {
                 NSLog(@"Weapon range is -%ld",(long)[unit weaponRange]);
             }
             NSLog(@"******************************************************************");
-        }
+        
         
     }
     
