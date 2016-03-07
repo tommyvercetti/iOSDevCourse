@@ -50,24 +50,24 @@
     terran1.clanName = @"red clan";
     
     
-    terran2.name = @"marine - James Eugene Raynor";
-    terran2.rateHP = arc4random()%55;
-    terran2.hammer = @"stone kirk";
-    terran2.clanName = @"red clan";
+//    terran2.name = @"marine - James Eugene Raynor";
+//    terran2.rateHP = arc4random()%55;
+//    terran2.hammer = @"stone kirk";
+//    terran2.clanName = @"red clan";
 
     
     
-    terran3.name = @"valkyrie - Sarah Connor";
-    terran3.rateHP = arc4random()%55;
-    terran3.hammer = @"iron kirk";
-    terran3.clanName = @"red clan";
+//    terran3.name = @"valkyrie - Sarah Connor";
+//    terran3.rateHP = arc4random()%55;
+//    terran3.hammer = @"iron kirk";
+//    terran3.clanName = @"red clan";
 
     
     
     
     Protoss* protoss1 = [[Protoss alloc]init];
-    Protoss* protoss2 = [[Protoss alloc]init];
-    Protoss* protoss3 = [[Protoss alloc]init];
+//    Protoss* protoss2 = [[Protoss alloc]init];
+//    Protoss* protoss3 = [[Protoss alloc]init];
     
     protoss1.name = @"probe - c3po";
     protoss1.rateHP = arc4random()%55;
@@ -79,26 +79,26 @@
     
     
     
-    protoss2.name = @"zealot - Zeratul";
-    protoss2.rateHP = arc4random()%55;
-    protoss2.hammer = @"wooden kirk";
-    protoss2.clanName = @"yellow clan";
+//    protoss2.name = @"zealot - Zeratul";
+//    protoss2.rateHP = arc4random()%55;
+//    protoss2.hammer = @"wooden kirk";
+//    protoss2.clanName = @"yellow clan";
 
     
     
     
-    protoss3.name = @"shuttle - Endaevor";
-    protoss3.rateHP = arc4random()%55;
-    protoss3.hammer = @"wooden kirk";
-    protoss3.clanName = @"yellow clan";
+//    protoss3.name = @"shuttle - Endaevor";
+//    protoss3.rateHP = arc4random()%55;
+//    protoss3.hammer = @"wooden kirk";
+//    protoss3.clanName = @"yellow clan";
 
     
     
     
     
     Zerg* zerg1 = [[Zerg alloc]init];
-    Zerg* zerg2 = [[Zerg alloc]init];
-    Zerg* zerg3 = [[Zerg alloc]init];
+//    Zerg* zerg2 = [[Zerg alloc]init];
+//    Zerg* zerg3 = [[Zerg alloc]init];
     
     zerg1.name = @"probe - c3po";
     zerg1.rateHP = arc4random()%55;
@@ -108,44 +108,44 @@
     
     
     
-    zerg2.name = @"zergling - Doggie";
-    zerg2.rateHP = arc4random()%43;
-    zerg2.weaponRange = 2;
-    zerg2.clanName = @"blue clan";
+//    zerg2.name = @"zergling - Doggie";
+//    zerg2.rateHP = arc4random()%43;
+//    zerg2.weaponRange = 2;
+//    zerg2.clanName = @"blue clan";
 
     
-    zerg3.name = @"mutalisk - Mutaliskus";
-    zerg2.rateHP = arc4random()%43;
-    zerg2.weaponRange = 2;
-    zerg2.clanName = @"blue clan";
+//    zerg3.name = @"mutalisk - Mutaliskus";
+//    zerg2.rateHP = arc4random()%43;
+//    zerg2.weaponRange = 2;
+//    zerg2.clanName = @"blue clan";
 
     
     Hybrids* hybrid1 = [[Hybrids alloc]init];
-    Hybrids* hybrid2 = [[Hybrids alloc]init];
-    Hybrids* hybrid3 = [[Hybrids alloc]init];
+//    Hybrids* hybrid2 = [[Hybrids alloc]init];
+//    Hybrids* hybrid3 = [[Hybrids alloc]init];
     
     hybrid1.name = @"hybrid - vasya";
     hybrid1.rateHP = arc4random()%33;
     hybrid1.weapon = @"golden kirk";
     hybrid1.clanName = @"green clan";
     
-    hybrid2.name = @"hybrid - vasya";
-    hybrid2.rateHP = arc4random()%33;
-    hybrid2.weapon = @"golden kirk";
-    hybrid2.clanName = @"green clan";
+//    hybrid2.name = @"hybrid - vasya";
+//    hybrid2.rateHP = arc4random()%33;
+//    hybrid2.weapon = @"golden kirk";
+//    hybrid2.clanName = @"green clan";
 
     
-    hybrid3.name = @"hybrid - vasya";
-    hybrid3.rateHP = arc4random()%33;
-    hybrid3.weapon = @"golden kirk";
-    hybrid3.clanName = @"green clan";
+//    hybrid3.name = @"hybrid - vasya";
+//    hybrid3.rateHP = arc4random()%33;
+//    hybrid3.weapon = @"golden kirk";
+//    hybrid3.clanName = @"green clan";
 
     
     
     
     
     
-    NSArray* groupOfUnits = [NSArray arrayWithObjects:terran1, terran2, terran3, protoss1, protoss2, protoss3, zerg1, zerg2, zerg3, nil];
+    NSArray* groupOfUnits = [NSArray arrayWithObjects:terran1, /*terran2, terran3,*/ protoss1, /*protoss2, protoss3,*/ zerg1, /*zerg2, zerg3,*/ nil];
     
     NSLog(@"units spawning on the map");
     NSLog(@"******************************************************************");
@@ -164,11 +164,21 @@
             NSLog(@"also unit optional from protocol methods**********************");
             [unit timeOfWorkerWeaponReload];
             [unit quoteWorker];
-           } 
-            if ([unit respondsToSelector:@selector(weaponRange)]) {
-                NSLog(@"Weapon range is -%ld",(long)[unit weaponRange]);
-            }
+            
+            
+            
+            
+//            if ([unit respondsToSelector:@selector(weaponRange)]) {
+//                NSLog(@"Weapon range is -%ld",(long)[unit weaponRange]);
+//            }
             NSLog(@"******************************************************************");
+            
+            
+            
+           } 
+        else if ([unit conformsToProtocol:@protocol(AirUnit)]) {
+            NSLog(@"Unit spawned name is - %@, with HP - %ld, weapon range - %ld, respond to clan - %@, and favorite planet - @", unit.name, unit.rateHP, unit.weaponRange, unit.clanName);
+        }
         
         
     }
