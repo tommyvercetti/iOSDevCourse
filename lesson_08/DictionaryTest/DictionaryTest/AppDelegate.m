@@ -17,6 +17,50 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSDictionary* dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:
+                                @"Petrov", @"lastName",
+                                @"Vasiliy", @"name",
+                                [NSNumber numberWithInt:25],@"age",
+                                nil];
+    
+    //NSDictionary* dictionary2 = [NSDictionary dictionaryWithObjectsAndKeys:<#(nonnull id), ...#>, nil]
+    
+    //NSDictionary* dictionary3 = @{@"lastName":@"Petrov", @"name":@"Vasiliy", @"age":@25};
+    
+    NSInteger number = 25;
+    
+    NSDictionary* dictionary3 = @{@"lastName":@"Petrov", @"name":@"Vasiliy", @"age":@(number)};
+    
+    
+    
+    
+    
+    NSLog(@"%@, \ncount = %d", dictionary3, [dictionary3 count]);
+    
+    NSLog(@"name = %@, lastName = %@, age = %d ",
+          [dictionary objectForKey:@"name"],
+          [dictionary objectForKey:@"lastName"],
+          [[dictionary objectForKey:@"age"] integerValue]);
+    
+    
+    for (NSString* key in  [dictionary3 allKeys]) {
+        id obj = [dictionary3 objectForKey:key];
+        NSLog(@"key = %@, value = %@", key, obj);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     return YES;
 }
 
