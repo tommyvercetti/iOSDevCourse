@@ -14,6 +14,7 @@
 		E62F5CD91DE7200600589E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E62F5CD81DE7200600589E9B /* Assets.xcassets */; };
 		E62F5CDC1DE7200600589E9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E62F5CDA1DE7200600589E9B /* LaunchScreen.storyboard */; };
 		E62F5CE51DE720B000589E9B /* ParentClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E62F5CE41DE720B000589E9B /* ParentClass.m */; };
+		E62F5CE81DE731EA00589E9B /* ChildClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E62F5CE71DE731EA00589E9B /* ChildClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		E62F5CDD1DE7200600589E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E62F5CE31DE720B000589E9B /* ParentClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentClass.h; sourceTree = "<group>"; };
 		E62F5CE41DE720B000589E9B /* ParentClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentClass.m; sourceTree = "<group>"; };
+		E62F5CE61DE731EA00589E9B /* ChildClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildClass.h; sourceTree = "<group>"; };
+		E62F5CE71DE731EA00589E9B /* ChildClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 			children = (
 				E62F5CE31DE720B000589E9B /* ParentClass.h */,
 				E62F5CE41DE720B000589E9B /* ParentClass.m */,
+				E62F5CE61DE731EA00589E9B /* ChildClass.h */,
+				E62F5CE71DE731EA00589E9B /* ChildClass.m */,
 				E62F5CCF1DE7200600589E9B /* AppDelegate.h */,
 				E62F5CD01DE7200600589E9B /* AppDelegate.m */,
 				E62F5CD21DE7200600589E9B /* ViewController.h */,
@@ -156,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E62F5CE51DE720B000589E9B /* ParentClass.m in Sources */,
+				E62F5CE81DE731EA00589E9B /* ChildClass.m in Sources */,
 				E62F5CD41DE7200600589E9B /* ViewController.m in Sources */,
 				E62F5CD11DE7200600589E9B /* AppDelegate.m in Sources */,
 				E62F5CCE1DE7200600589E9B /* main.m in Sources */,
@@ -315,6 +321,7 @@
 				E62F5CE21DE7200600589E9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

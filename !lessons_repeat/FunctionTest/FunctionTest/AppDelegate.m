@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ParentClass.h"
+#import "ChildClass.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +21,7 @@
     // Override point for customization after application launch.
     
     
-    ParentClass* parent1 = [[ParentClass alloc]init];
+    ChildClass* parent1 = [[ChildClass alloc]init];
     
     [parent1 sayHello];
     [parent1 say:@"How are you?"];
@@ -29,7 +30,7 @@
     
     NSLog(@"%@", [parent1 saySomething]);
     
-    [ParentClass whoAreYou];
+    [ChildClass whoAreYou];
     
     
     

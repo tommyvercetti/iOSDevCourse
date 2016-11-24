@@ -10,12 +10,16 @@
 
 @interface ParentClass : NSObject
 
--(void) sayHello;
++(void) whoAreYou;
+
+- (void) sayHello;
 - (void) say:(NSString*) string;
 - (void) say:(NSString*) string and:(NSString*) string2;
 - (void) say:(NSString*) string and:(NSString*) string2 andAfterThat:(NSString*) string3;
+
+- (NSString*) saySomeNumberString;
 - (NSString*) saySomething;
 
-+(void) whoAreYou;
+
 
 @end

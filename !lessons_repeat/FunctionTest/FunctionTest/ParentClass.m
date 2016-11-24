@@ -10,6 +10,16 @@
 
 @implementation ParentClass
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        NSLog(@"parent class is created");
+    }
+    return self;
+}
+
+
 +(void) whoAreYou{
     NSLog(@"I'm a ParrentCalss");
 }
@@ -32,8 +42,16 @@
     NSLog(@"%@, %@, %@",string, string2, string3);
 }
 
+- (NSString*) saySomeNumberString{
+    return [NSString stringWithFormat:@"%@", [NSDate date] ];
+}
+
+
+
 - (NSString*) saySomething {
-    return @"I won't say anything :)";
+    NSString* string = [self saySomeNumberString];
+    
+    return string;
 }
 
 
