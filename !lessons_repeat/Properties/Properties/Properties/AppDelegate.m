@@ -1,14 +1,12 @@
 //
 //  AppDelegate.m
-//  FunctionTest
+//  Properties
 //
-//  Created by Andrian Kryk on 11/24/16.
+//  Created by Andrian Kryk on 11/28/16.
 //  Copyright © 2016 Andrian Kryk. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "ParentClass.h"
-#import "ChildClass.h"
 
 @interface AppDelegate ()
 
@@ -19,23 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    
-    ChildClass* parent1 = [[ChildClass alloc]init];
-    
-    [parent1 sayHello];
-    [parent1 say:@"How are you?"];
-    [parent1 say:@"I was worried about you" and:@"where have you been?"];
-    [parent1 say:@"hope you are ok" and:@"are you?" andAfterThat:@"are you sure?"];
-    
-    NSLog(@"%@", [parent1 saySomething]);
-    
-    [ChildClass whoAreYou];
-    
-    
-    
-    
-    
     return YES;
 }
 

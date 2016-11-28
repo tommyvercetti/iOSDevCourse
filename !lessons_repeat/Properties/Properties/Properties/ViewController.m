@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  FunctionTest
+//  Properties
 //
-//  Created by Andrian Kryk on 11/24/16.
+//  Created by Andrian Kryk on 11/28/16.
 //  Copyright © 2016 Andrian Kryk. All rights reserved.
 //
 
