@@ -13,6 +13,7 @@
 		E6EDB3241DEC6704000E76F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6EDB3221DEC6704000E76F7 /* Main.storyboard */; };
 		E6EDB3261DEC6704000E76F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6EDB3251DEC6704000E76F7 /* Assets.xcassets */; };
 		E6EDB3291DEC6704000E76F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6EDB3271DEC6704000E76F7 /* LaunchScreen.storyboard */; };
+		E6EDB3321DEC6A5E000E76F7 /* Boxer.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EDB3311DEC6A5E000E76F7 /* Boxer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		E6EDB3251DEC6704000E76F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6EDB3281DEC6704000E76F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6EDB32A1DEC6704000E76F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6EDB3301DEC6A5E000E76F7 /* Boxer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Boxer.h; sourceTree = "<group>"; };
+		E6EDB3311DEC6A5E000E76F7 /* Boxer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Boxer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 			children = (
 				E6EDB31C1DEC6704000E76F7 /* AppDelegate.h */,
 				E6EDB31D1DEC6704000E76F7 /* AppDelegate.m */,
+				E6EDB3301DEC6A5E000E76F7 /* Boxer.h */,
+				E6EDB3311DEC6A5E000E76F7 /* Boxer.m */,
 				E6EDB31F1DEC6704000E76F7 /* ViewController.h */,
 				E6EDB3201DEC6704000E76F7 /* ViewController.m */,
 				E6EDB3221DEC6704000E76F7 /* Main.storyboard */,
@@ -152,6 +157,7 @@
 			files = (
 				E6EDB3211DEC6704000E76F7 /* ViewController.m in Sources */,
 				E6EDB31E1DEC6704000E76F7 /* AppDelegate.m in Sources */,
+				E6EDB3321DEC6A5E000E76F7 /* Boxer.m in Sources */,
 				E6EDB31B1DEC6704000E76F7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
