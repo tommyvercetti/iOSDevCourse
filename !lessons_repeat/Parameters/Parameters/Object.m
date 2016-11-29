@@ -10,4 +10,10 @@
 
 @implementation Object
 
+-(void) dealloc{
+    NSLog(@"objec is deallocated");
+}
+
+
+
 @end
