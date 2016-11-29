@@ -1,8 +1,8 @@
 //
 //  Object.m
-//  Parameters
+//  Arrays
 //
-//  Created by Andrian Kryk on 11/28/16.
+//  Created by Andrian Kryk on 11/29/16.
 //  Copyright © 2016 Andrian Kryk. All rights reserved.
 //
 
@@ -10,10 +10,8 @@
 
 @implementation Object
 
--(void) dealloc{
-    NSLog(@"objec is deallocated");
+-(void) action{
+    NSLog(@"%@ ACTION", self.name);
 }
-
-
 
 @end

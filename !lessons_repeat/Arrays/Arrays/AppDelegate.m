@@ -1,13 +1,14 @@
 //
 //  AppDelegate.m
-//  Parameters
+//  Arrays
 //
-//  Created by Andrian Kryk on 11/28/16.
+//  Created by Andrian Kryk on 11/29/16.
 //  Copyright © 2016 Andrian Kryk. All rights reserved.
 //
 
 #import "AppDelegate.h"
 #import "Object.h"
+#import "Child.h"
 
 @interface AppDelegate ()
 
@@ -19,23 +20,53 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+//    NSArray* array = [[NSArray alloc]initWithObjects:@"string 1",@"string 2", @"string 3", nil];
+    
+//    for (int i=0; i<[array count]; i++) {
+//        NSLog(@"%@", [array objectAtIndex:i] );
+//        NSLog(@"i = %d", i);
+    
+//    for (int i=[array count] - 1; i>=0; i--) {
+//        NSLog(@"%@", [array objectAtIndex:i] );
+//        NSLog(@"i = %d", i);
+//    }
+    
+//    for (NSString* string in array) {
+//        NSLog(@"%@", string);
+//        NSLog(@"index = %d", [array indexOfObject:string]);
+//    }
     
     
-    [self testObject];
     
     
-    NSLog(@"test is over");
+    Object* obj1 = [[Object alloc]init];
+    Object* obj2 = [[Object alloc]init];
+    Child* obj3 = [[Child alloc]init];
+    
+    NSArray* massiv = [NSArray arrayWithObjects:obj1, obj2, obj3, nil];
+    
+    obj1.name = @"name 1";
+    obj2.name = @"name 2";
+    [obj3 setName:@"name 333"];
+    obj3.lastName = @"last name";
     
     
-    
+    for (Child* obj in massiv) {
+        NSLog(@"name = %@", obj.name);
+        [obj action];
+        
+        if ([obj isKindOfClass:[Child class]]) {
+            
+            Child* child = (Child*)obj;
+            
+            NSLog(@"last name = %@", obj.lastName);
+        }
+        
+        
+        
+    }
     
     return YES;
-}
-
-- (void)testObject{
-    Object* object = [[Object alloc]init];
-    
-    self.object = obj;
 }
 
 
