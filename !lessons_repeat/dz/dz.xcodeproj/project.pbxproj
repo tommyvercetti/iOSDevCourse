@@ -13,6 +13,14 @@
 		E6EDB39C1DEDDB3C000E76F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6EDB39A1DEDDB3C000E76F7 /* Main.storyboard */; };
 		E6EDB39E1DEDDB3C000E76F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6EDB39D1DEDDB3C000E76F7 /* Assets.xcassets */; };
 		E6EDB3A11DEDDB3C000E76F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6EDB39F1DEDDB3C000E76F7 /* LaunchScreen.storyboard */; };
+		E6EDB3AA1DEDDB64000E76F7 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EDB3A91DEDDB64000E76F7 /* Human.m */; };
+		E6EDB3AD1DEDDD16000E76F7 /* Cyclist.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EDB3AC1DEDDD16000E76F7 /* Cyclist.m */; };
+		E6EDB3B01DEDDD51000E76F7 /* Runner.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EDB3AF1DEDDD51000E76F7 /* Runner.m */; };
+		E6EDB3B31DEDDD78000E76F7 /* Swimmer.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EDB3B21DEDDD78000E76F7 /* Swimmer.m */; };
+		E6EDB3B61DEDE543000E76F7 /* Dancer.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EDB3B51DEDE543000E76F7 /* Dancer.m */; };
+		E6EDB3BC1DEDF10D000E76F7 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EDB3BB1DEDF10D000E76F7 /* Animal.m */; };
+		E6EDB3C21DEDF251000E76F7 /* Cow.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EDB3C11DEDF251000E76F7 /* Cow.m */; };
+		E6EDB3C51DEDF286000E76F7 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EDB3C41DEDF286000E76F7 /* Cat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,22 @@
 		E6EDB39D1DEDDB3C000E76F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6EDB3A01DEDDB3C000E76F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6EDB3A21DEDDB3C000E76F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6EDB3A81DEDDB64000E76F7 /* Human.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		E6EDB3A91DEDDB64000E76F7 /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		E6EDB3AB1DEDDD16000E76F7 /* Cyclist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cyclist.h; sourceTree = "<group>"; };
+		E6EDB3AC1DEDDD16000E76F7 /* Cyclist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cyclist.m; sourceTree = "<group>"; };
+		E6EDB3AE1DEDDD51000E76F7 /* Runner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runner.h; sourceTree = "<group>"; };
+		E6EDB3AF1DEDDD51000E76F7 /* Runner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runner.m; sourceTree = "<group>"; };
+		E6EDB3B11DEDDD78000E76F7 /* Swimmer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swimmer.h; sourceTree = "<group>"; };
+		E6EDB3B21DEDDD78000E76F7 /* Swimmer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Swimmer.m; sourceTree = "<group>"; };
+		E6EDB3B41DEDE543000E76F7 /* Dancer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dancer.h; sourceTree = "<group>"; };
+		E6EDB3B51DEDE543000E76F7 /* Dancer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dancer.m; sourceTree = "<group>"; };
+		E6EDB3BA1DEDF10D000E76F7 /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		E6EDB3BB1DEDF10D000E76F7 /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		E6EDB3C01DEDF251000E76F7 /* Cow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cow.h; path = ../Cow.h; sourceTree = "<group>"; };
+		E6EDB3C11DEDF251000E76F7 /* Cow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cow.m; path = ../Cow.m; sourceTree = "<group>"; };
+		E6EDB3C31DEDF286000E76F7 /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		E6EDB3C41DEDF286000E76F7 /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +82,24 @@
 		E6EDB3901DEDDB3C000E76F7 /* dz */ = {
 			isa = PBXGroup;
 			children = (
+				E6EDB3B41DEDE543000E76F7 /* Dancer.h */,
+				E6EDB3B51DEDE543000E76F7 /* Dancer.m */,
+				E6EDB3A81DEDDB64000E76F7 /* Human.h */,
+				E6EDB3A91DEDDB64000E76F7 /* Human.m */,
+				E6EDB3AB1DEDDD16000E76F7 /* Cyclist.h */,
+				E6EDB3AC1DEDDD16000E76F7 /* Cyclist.m */,
+				E6EDB3AE1DEDDD51000E76F7 /* Runner.h */,
+				E6EDB3AF1DEDDD51000E76F7 /* Runner.m */,
+				E6EDB3B11DEDDD78000E76F7 /* Swimmer.h */,
+				E6EDB3B21DEDDD78000E76F7 /* Swimmer.m */,
 				E6EDB3941DEDDB3C000E76F7 /* AppDelegate.h */,
 				E6EDB3951DEDDB3C000E76F7 /* AppDelegate.m */,
+				E6EDB3BA1DEDF10D000E76F7 /* Animal.h */,
+				E6EDB3BB1DEDF10D000E76F7 /* Animal.m */,
+				E6EDB3C31DEDF286000E76F7 /* Cat.h */,
+				E6EDB3C41DEDF286000E76F7 /* Cat.m */,
+				E6EDB3C01DEDF251000E76F7 /* Cow.h */,
+				E6EDB3C11DEDF251000E76F7 /* Cow.m */,
 				E6EDB3971DEDDB3C000E76F7 /* ViewController.h */,
 				E6EDB3981DEDDB3C000E76F7 /* ViewController.m */,
 				E6EDB39A1DEDDB3C000E76F7 /* Main.storyboard */,
@@ -150,9 +190,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6EDB3C51DEDF286000E76F7 /* Cat.m in Sources */,
+				E6EDB3B61DEDE543000E76F7 /* Dancer.m in Sources */,
+				E6EDB3C21DEDF251000E76F7 /* Cow.m in Sources */,
+				E6EDB3AD1DEDDD16000E76F7 /* Cyclist.m in Sources */,
+				E6EDB3B01DEDDD51000E76F7 /* Runner.m in Sources */,
 				E6EDB3991DEDDB3C000E76F7 /* ViewController.m in Sources */,
 				E6EDB3961DEDDB3C000E76F7 /* AppDelegate.m in Sources */,
 				E6EDB3931DEDDB3C000E76F7 /* main.m in Sources */,
+				E6EDB3BC1DEDF10D000E76F7 /* Animal.m in Sources */,
+				E6EDB3AA1DEDDB64000E76F7 /* Human.m in Sources */,
+				E6EDB3B31DEDDD78000E76F7 /* Swimmer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

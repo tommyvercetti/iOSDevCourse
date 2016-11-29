@@ -10,4 +10,8 @@
 
 @implementation Cyclist
 
+- (void) moving{
+    NSLog(@"He's moving. Moving on a bike");
+}
+
 @end

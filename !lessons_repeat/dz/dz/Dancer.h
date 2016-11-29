@@ -10,4 +10,9 @@
 
 @interface Dancer : Human
 
+@property (strong,nonatomic) NSString* danceKind;
+@property (strong, nonatomic) NSString* dacePlace;
+
+
+- (void) dancing;
 @end

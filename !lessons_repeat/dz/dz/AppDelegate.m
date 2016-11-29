@@ -7,6 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "Human.h"
+#import "Cyclist.h"
+#import "Runner.h"
+#import "Swimmer.h"
+#import "Dancer.h"
+#import "Cow.h"
+#import "Cat.h"
+
 
 @interface AppDelegate ()
 
@@ -17,6 +25,62 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    
+    Human* human1 = [[Human alloc]init];
+    human1.name = @"chuvak";
+    
+    Cyclist* cyclist1 = [[Cyclist alloc]init];
+    cyclist1.name = @"velosipedist";
+    
+    Runner* runner1 = [[Runner alloc]init];
+    runner1.name = @"begun";
+    
+    Swimmer* swimmer1 = [[Swimmer alloc]init];
+    swimmer1.name = @"plovec";
+    
+    Dancer* dancer1 = [[Dancer alloc]init];
+    dancer1.name = @"PJ";
+    
+    Cow* cow = [[Cow alloc]init];
+    cow.animalName = @"Moorka";
+    
+    Cat* cat = [[Cat alloc]init];
+    cat.animalName = @"Rizhik";
+    
+    NSArray* massiv = [NSArray arrayWithObjects: human1, cyclist1, runner1, swimmer1, dancer1, nil];
+    
+    
+  
+    
+    for (Dancer* obj in [massiv reverseObjectEnumerator]) {
+        NSLog(@"name = %@", obj.name);
+        [obj moving];
+        
+        if ([obj isKindOfClass:[Dancer class]]) {
+            
+            Dancer* dancer1 = (Dancer*)obj;
+            
+            [obj dancing];
+        }
+        
+    }
+ 
+    
+    
+    NSArray* massiv2 = [NSArray arrayWithObjects:human1, cyclist1, runner1, swimmer1, dancer1, cat, cow, nil];
+    
+    for (<#type *object#> in <#collection#>) {
+        <#statements#>
+    }
+    
+    
+    
+    
+    
+    
+    
     return YES;
 }
 

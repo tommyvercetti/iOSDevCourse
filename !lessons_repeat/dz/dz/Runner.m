@@ -10,4 +10,9 @@
 
 @implementation Runner
 
+- (void) moving{
+    NSLog(@"He's moving. He's run!");
+}
+
+
 @end

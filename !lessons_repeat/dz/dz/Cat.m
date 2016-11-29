@@ -10,4 +10,7 @@
 
 @implementation Cat
 
+- (void) animalMoving{
+    NSLog(@"meow, give me a hug");
+}
 @end

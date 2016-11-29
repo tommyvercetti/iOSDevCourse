@@ -10,4 +10,11 @@
 
 @implementation Animal
 
+- (void) animalMoving{
+    NSLog(@"animal moving...");
+}
+
+- (void) typeAnimal {
+    NSLog(@"im animal");
+}
 @end

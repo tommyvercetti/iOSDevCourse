@@ -10,4 +10,10 @@
 
 @implementation Cow
 
+- (void) giveMilk{
+    NSLog(@"Touch my tits, Moo!");
+}
+
+
+
 @end
