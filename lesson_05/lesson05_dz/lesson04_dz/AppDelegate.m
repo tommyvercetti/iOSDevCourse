@@ -56,43 +56,86 @@
     plovets.gender = @"woman";
     
     WalkingDead* zombak = [[WalkingDead alloc]init];
-    zombak.walkingName = @"dohliak";
-    zombak.deadAge = 2.5;
+    zombak.name = @"dohliak";
+    zombak.height = 2.5;
+    zombak.weight = 70;
+    
     
     //creating array of all sportsmen
     NSArray* massivSportstmenov = [NSArray arrayWithObjects:chelovek,cyclist,begun,plovets,zombak, nil];
     
-    for (int countNumber = [massivSportstmenov count] - 1; countNumber >= 0; countNumber--) {
-        Human* Benito = [massivSportstmenov objectAtIndex:countNumber];
-        if ([Benito isKindOfClass:[WalkingDead class]]) {
-            WalkingDead* anyWalkingDead = (WalkingDead*) Benito;
+    
+    
+    for (NSObject* objects in [massivSportstmenov reverseObjectEnumerator]) {
+        Human* humanClass = (Human*)objects;
+        if ([objects isKindOfClass:[WalkingDead class]]) {
+                        WalkingDead* humanClass = (WalkingDead*) objects;
             
-            NSLog(@"name human: %@, height human: %.2f, weight human: %.2f, gender human: %@, walking name: %@, dead age: %.2f",
-                  anyWalkingDead.name,
-                  anyWalkingDead.height,
-                  anyWalkingDead.weight,
-                  anyWalkingDead.gender,
-                  anyWalkingDead.walkingName,
-                  anyWalkingDead.deadAge);
+                        NSLog(@"name human: %@, height human: %.2f, weight human: %.2f, gender human: %@",
+                              humanClass.name,
+                              humanClass.height,
+                              humanClass.weight,
+                              humanClass.gender
+                              );
             
-            NSLog(@"%@ say: ", anyWalkingDead.name);
-            [anyWalkingDead slowWalking];
-            [anyWalkingDead methodMovement];
-            NSLog(@" ");
-        }
-        else{
-            NSLog(@"name Human: %@, height human: %.2f, weight human: %.2f, gender human: %@",
-                  Benito.name,
-                  Benito.height,
-                  Benito.weight,
-                  Benito.gender);
-            NSLog(@"%@ say; ", Benito.name);
-            [Benito methodMovement];
-            NSLog(@" ");
+                        NSLog(@"%@ say: ", humanClass.name);
             
-        }
+                        [humanClass methodMovement];
+                        NSLog(@" ");
+                    }
+                    else{
+                        NSLog(@"name Human: %@, height human: %.2f, weight human: %.2f, gender human: %@",
+                              humanClass.name,
+                              humanClass.height,
+                              humanClass.weight,
+                              humanClass.gender);
+                        NSLog(@"%@ say; ", humanClass.name);
+                        [humanClass methodMovement];
+                        NSLog(@" ");
+                        
+                    }
+
         
     }
+    
+    
+//    for (int countNumber = [massivSportstmenov count] - 1; countNumber >= 0; countNumber--) {
+//        
+//        
+//        Human* Benito = [massivSportstmenov objectAtIndex:countNumber];
+//        
+//        
+//        
+//        
+//        if ([Benito isKindOfClass:[WalkingDead class]]) {
+//            WalkingDead* anyWalkingDead = (WalkingDead*) Benito;
+//            
+//            NSLog(@"name human: %@, height human: %.2f, weight human: %.2f, gender human: %@, walking name: %@, dead age: %.2f",
+//                  anyWalkingDead.name,
+//                  anyWalkingDead.height,
+//                  anyWalkingDead.weight,
+//                  anyWalkingDead.gender,
+//                  anyWalkingDead.walkingName,
+//                  anyWalkingDead.deadAge);
+//            
+//            NSLog(@"%@ say: ", anyWalkingDead.name);
+//            [anyWalkingDead slowWalking];
+//            [anyWalkingDead methodMovement];
+//            NSLog(@" ");
+//        }
+//        else{
+//            NSLog(@"name Human: %@, height human: %.2f, weight human: %.2f, gender human: %@",
+//                  Benito.name,
+//                  Benito.height,
+//                  Benito.weight,
+//                  Benito.gender);
+//            NSLog(@"%@ say; ", Benito.name);
+//            [Benito methodMovement];
+//            NSLog(@" ");
+//            
+//        }
+//        
+//    }
     
     
     
