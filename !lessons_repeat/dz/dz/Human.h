@@ -15,6 +15,8 @@
 @property (assign, nonatomic) CGFloat height;
 @property (assign, nonatomic) CGFloat weight;
 @property (strong, nonatomic) NSString* sex;
+@property (strong, nonatomic) NSString* typeHuman;
+
 
 - (void) moving;
 

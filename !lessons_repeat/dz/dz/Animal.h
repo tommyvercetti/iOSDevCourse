@@ -15,6 +15,7 @@
 @property (assign, nonatomic) CGFloat animalHeight;
 @property (assign, nonatomic) CGFloat animalWeight;
 @property (strong, nonatomic) NSString* animalSex;
+@property (strong, nonatomic) NSString* typeAnimal;
 
 - (void) animalMoving;
 

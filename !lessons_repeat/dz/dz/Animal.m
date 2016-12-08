@@ -14,7 +14,5 @@
     NSLog(@"animal moving...");
 }
 
-- (void) typeAnimal {
-    NSLog(@"im animal");
-}
+
 @end

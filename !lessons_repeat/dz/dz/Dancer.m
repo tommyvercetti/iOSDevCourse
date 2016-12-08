@@ -10,6 +10,8 @@
 
 @implementation Dancer
 
+
+
 - (void) dancing{
     NSLog(@"He's dancing. Just dancing alone");
 }

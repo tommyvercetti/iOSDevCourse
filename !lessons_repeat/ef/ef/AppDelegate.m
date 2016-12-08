@@ -1,20 +1,12 @@
 //
 //  AppDelegate.m
-//  dz
+//  ef
 //
-//  Created by Andrian Kryk on 11/29/16.
+//  Created by Andrian Kryk on 12/7/16.
 //  Copyright © 2016 Andrian Kryk. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "Human.h"
-#import "Cyclist.h"
-#import "Runner.h"
-#import "Swimmer.h"
-#import "Dancer.h"
-#import "Cow.h"
-#import "Cat.h"
-
 
 @interface AppDelegate ()
 
@@ -25,11 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    
-    
- 
-
+    return YES;
+}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

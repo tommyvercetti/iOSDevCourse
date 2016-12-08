@@ -11,6 +11,7 @@
 @implementation Cow
 
 - (void) giveMilk{
+    [self animalMoving];
     NSLog(@"Touch my tits, Moo!");
 }
 

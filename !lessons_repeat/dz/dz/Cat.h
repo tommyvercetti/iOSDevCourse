@@ -10,4 +10,9 @@
 
 @interface Cat : Animal
 
+@property (strong, nonatomic) NSString* nickname;
+@property (assign, nonatomic) CGFloat nayCapacity;
+
+- (void) catMoving;
+
 @end

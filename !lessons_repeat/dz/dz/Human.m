@@ -14,8 +14,6 @@
     NSLog(@"He's moving. Just moving");
 }
 
-- (void) typeHuman {
-    NSLog(@"im human");
-}
+
 
 @end
