@@ -7,7 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
+
+typedef enum{
+    dataMiss,
+    dataGoal,
+    dataTarget,
+}enumData;
+
 
 @interface Statistics : NSObject
+
+@property (assign, nonatomic) enumData missess;
+@property (assign, nonatomic) enumData shootsOnGoal;
+@property (assign, nonatomic) enumData shootsOnTarget;
+
+
+
 
 @end

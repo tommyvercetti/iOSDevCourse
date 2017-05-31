@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E643FBD61DFEE0C900BE3D44 /* ProtoLife.m in Sources */ = {isa = PBXBuildFile; fileRef = E643FBD51DFEE0C900BE3D44 /* ProtoLife.m */; };
 		E64465FA1DF9CE4D0086D648 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E64465F91DF9CE4D0086D648 /* main.m */; };
 		E64465FD1DF9CE4D0086D648 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E64465FC1DF9CE4D0086D648 /* AppDelegate.m */; };
 		E64466001DF9CE4D0086D648 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E64465FF1DF9CE4D0086D648 /* ViewController.m */; };
 		E64466031DF9CE4D0086D648 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64466011DF9CE4D0086D648 /* Main.storyboard */; };
 		E64466051DF9CE4D0086D648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64466041DF9CE4D0086D648 /* Assets.xcassets */; };
 		E64466081DF9CE4D0086D648 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64466061DF9CE4D0086D648 /* LaunchScreen.storyboard */; };
+		E64466111DF9D55C0086D648 /* Statistics.m in Sources */ = {isa = PBXBuildFile; fileRef = E64466101DF9D55C0086D648 /* Statistics.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E643FBD41DFEE0C900BE3D44 /* ProtoLife.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtoLife.h; sourceTree = "<group>"; };
+		E643FBD51DFEE0C900BE3D44 /* ProtoLife.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtoLife.m; sourceTree = "<group>"; };
 		E64465F51DF9CE4D0086D648 /* dz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64465F91DF9CE4D0086D648 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E64465FB1DF9CE4D0086D648 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		E64466041DF9CE4D0086D648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E64466071DF9CE4D0086D648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E64466091DF9CE4D0086D648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E644660F1DF9D55C0086D648 /* Statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Statistics.h; sourceTree = "<group>"; };
+		E64466101DF9D55C0086D648 /* Statistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Statistics.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 		E64465F71DF9CE4D0086D648 /* dz */ = {
 			isa = PBXGroup;
 			children = (
+				E644660F1DF9D55C0086D648 /* Statistics.h */,
+				E64466101DF9D55C0086D648 /* Statistics.m */,
+				E643FBD41DFEE0C900BE3D44 /* ProtoLife.h */,
+				E643FBD51DFEE0C900BE3D44 /* ProtoLife.m */,
 				E64465FB1DF9CE4D0086D648 /* AppDelegate.h */,
 				E64465FC1DF9CE4D0086D648 /* AppDelegate.m */,
 				E64465FE1DF9CE4D0086D648 /* ViewController.h */,
@@ -151,7 +161,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E64466001DF9CE4D0086D648 /* ViewController.m in Sources */,
+				E643FBD61DFEE0C900BE3D44 /* ProtoLife.m in Sources */,
 				E64465FD1DF9CE4D0086D648 /* AppDelegate.m in Sources */,
+				E64466111DF9D55C0086D648 /* Statistics.m in Sources */,
 				E64465FA1DF9CE4D0086D648 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +321,7 @@
 				E644660E1DF9CE4D0086D648 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

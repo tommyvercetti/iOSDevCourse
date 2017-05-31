@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "Statistics.h"
+#import "ProtoLife.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,156 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSLog(@"************01************");
+    
+    ProtoLife *protoLife1 = [[ProtoLife alloc]init];
+    protoLife1.name = @"Vasiliy";
+    protoLife1.height = 175.0f;
+    protoLife1.weight = 85.0f;
+    protoLife1.race = arc4random()%4;
+    protoLife1.gender = arc4random()%4;
+    protoLife1.type = arc4random()%4;
+    
+    
+    
+    
+    NSArray* arrayOfNames = [[NSArray alloc]initWithObjects:@"Vasiliy",@"Petro",@"Mykola",@"Sergiy",@"Sashko",@"Mykhaylo",@"Leonid", nil];
+    NSLog(@"%@", [arrayOfNames objectAtIndex:arc4random()%8]);
+    NSLog(@"%@", [arrayOfNames objectAtIndex:arc4random()%8]);
+    NSLog(@"%@", [arrayOfNames objectAtIndex:arc4random()%8]);
+    NSLog(@"%@", [arrayOfNames objectAtIndex:arc4random()%8]);
+    NSLog(@"%@", [arrayOfNames objectAtIndex:arc4random()%8]);
+    
+    
+    NSLog(@"name = %@, height = %.2f, weight = %.2f, race = %@, gender = %@, type = %@",
+          [protoLife1 name],
+          [protoLife1 height],
+          [protoLife1 weight],
+//          [protoLife1 race],
+//          [protoLife1 gender],
+//          [protoLife1 type],
+          
+
+          [ProtoLife NSStringWithEnumRace:raceNone],
+          [ProtoLife NSStringWithEnumGender:genderNone],
+          [ProtoLife NSStringWithEnumType:typeOfCreepNone],
+          nil);
+    
+    
+    
+    NSMutableArray *myMutArray = [[NSMutableArray alloc]init];
+    
+    [myMutArray addObject:protoLife1];
+    
+    NSLog(@"%@",myMutArray);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    NSLog(@"------------------------------------------------------------------------------");
+
+    CGRect fieldCenter = CGRectMake(3, 3, 4, 4);
+    
+    
+    for (int i=0; i<2; i++) {
+        CGPoint point = CGPointMake(arc4random()%11, arc4random()%11);
+        NSValue* newPoint = [NSValue valueWithCGPoint:point];
+        NSLog(@"%@", newPoint);
+        
+        if (CGRectContainsPoint(fieldCenter, point)) {
+            NSLog(@"--------------------Gotcha!!!");
+        }
+        else{
+            NSLog(@"--------------------Try again");
+        }
+        
+    }
+    
+    NSLog(@"------------------------------------------------------------------------------");
+    NSMutableArray* arrayOfCoordinates = [[NSMutableArray alloc]init];
+    NSMutableArray* arrayOfShootResult = [[NSMutableArray alloc]init];
+    
+    NSNumber* onGoalObject = [NSNumber numberWithInt:dataGoal];
+    NSNumber* onTargetObject = [NSNumber numberWithInt:dataTarget];
+    NSNumber* miss = [NSNumber numberWithInt:dataMiss];
+    
+    NSInteger onGoalCount = 0;
+    NSInteger onTargetCount = 0;
+    NSInteger missCount = 0;
+    
+    NSMutableArray* arrayOnGoal = [[NSMutableArray alloc]init];
+    NSMutableArray* arrayOnTarget = [[NSMutableArray alloc]init];
+    NSMutableArray* arrayMiss = [[NSMutableArray alloc]init];
+    
+    for (int i = 0; i<2; i++) {
+        NSInteger x = arc4random()%11;
+        NSInteger y = arc4random()%11;
+        
+        CGRect mainRect = CGRectMake(0, 0, 10, 10);
+        CGRect goalRect = CGRectMake(3, 3, 4, 4);
+        
+        CGPoint shoot = CGPointMake(x, y);
+        
+        if (CGRectContainsPoint(goalRect, shoot)) {
+            [arrayOfCoordinates addObject:[NSValue valueWithCGPoint:shoot]];
+            [arrayOfShootResult addObject:onGoalObject];
+        }
+        else if (CGRectContainsPoint(mainRect, shoot)){
+            [arrayOfCoordinates addObject:[NSValue valueWithCGPoint:shoot]];
+            [arrayOfShootResult addObject:onTargetObject];
+        }
+        else {
+            [arrayOfCoordinates addObject:[NSValue valueWithCGPoint:shoot]];
+            [arrayOfShootResult addObject:miss];
+        }
+    }
+    
+    //output
+    
+    for (int j = 0; j<arrayOfShootResult.count; j++) {
+        if ([[arrayOfShootResult objectAtIndex:j] integerValue] == dataGoal){
+            onGoalCount ++;
+            [arrayOnGoal addObject:[arrayOfCoordinates objectAtIndex:j]];
+        }
+        else if([[arrayOfShootResult objectAtIndex:j] integerValue] == dataTarget){
+            onTargetCount ++;
+            [arrayOnTarget addObject:[arrayOfCoordinates objectAtIndex:j]];
+        }
+        else {
+            missCount ++;
+            [arrayMiss addObject:[arrayOfCoordinates objectAtIndex:j]];
+        }
+    }
+    
+    
+    NSLog(@"Hello");
+    
+    NSLog(@"you shoot on goal %ld times", onGoalCount);
+    for (int j = 0; j< onGoalCount; j++) {
+        NSLog(@"%@",NSStringFromCGPoint([[arrayOnGoal objectAtIndex:j] CGPointValue]));
+    }
+    
+    NSLog(@"you shoot on target %ld times", onTargetCount);
+    for (int j = 0; j< onTargetCount; j++) {
+       NSLog(@"%@",NSStringFromCGPoint([[arrayOnTarget objectAtIndex:j] CGPointValue]));
+    }
+    
+    NSLog(@"you miss %ld times", missCount);
+    for (int j = 0; j< missCount; j++) {
+        NSLog(@"%@",NSStringFromCGPoint([[arrayMiss objectAtIndex:j] CGPointValue]));
+    }
+    NSLog(@"------------------------------------------------------------------------------");
+
     return YES;
 }
 
