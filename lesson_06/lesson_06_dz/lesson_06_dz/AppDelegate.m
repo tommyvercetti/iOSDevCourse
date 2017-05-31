@@ -88,7 +88,7 @@
     NSLog(@"************02************");
     //****************************************************************
 
-    /*
+   
     
     NSMutableArray* arrayOfCoordinates = [[NSMutableArray alloc]init];
     NSMutableArray* arrayOfShootResults = [[NSMutableArray alloc]init];
